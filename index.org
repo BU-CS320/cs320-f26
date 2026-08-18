@@ -11,7 +11,7 @@ language as an object of formal study.
 
 * Links
 + Course Manual
-+ Course Repository
++ [[https://github.com/BU-CS320/cs320-f26][Course Repository]]
 + [[https://nmmull.github.io/stdlib320/stdlib320/Stdlib320/index.html][Course Standard Library]]
 + [[https://piazza.com/class/msyp9jdexfl755][Piazza]]
 + [[https://www.gradescope.com/courses/1355920][Gradescope]] (Entry code: E632PP)
