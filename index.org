@@ -1,0 +1,339 @@
+#+title: CAS CS 320
+#+subtitle: Concepts of Programming Languages
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+#+OPTIONS: html-style:nil H:2 toc:1 num:nil
+
+-----
+
+*(UNDER CONSTRUCTION)* CS320 is a course about programming languages, the *design* and
+*implementation* of programming languages.  We take up the programming
+language as an object of formal study.
+
+* Links
++ Course Manual
++ Course Repository
++ [[https://nmmull.github.io/stdlib320/stdlib320/Stdlib320/index.html][Course Standard Library]]
++ [[https://piazza.com/class/msyp9jdexfl755][Piazza]]
++ [[https://www.gradescope.com/courses/1355920][Gradescope]] (Entry code: E632PP)
+* Schedule (Compact)
+|-------+---------------------------------------------+------------------------------------------|
+| Date  | Topic                                       | Notes                                    |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*09-03 Thursday (Lecture)][09-03]] | Introducting OCaml                          | Read the course manual, A1 out           |
+|-------+---------------------------------------------+------------------------------------------|
+| 09-07 | *No Lab*                                    | Labor Day                                |
+| [[*09-08 Tuesday (Lecture)][09-08]] | Recursion and Lists                         |                                          |
+| [[*09-10 Thursday (Workshop)][09-10]] | Designing Functions (Workshop)              | A2 out, A1 due                           |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*09-14 Monday (Lab 1)][09-14]] | Lab 1: RPN Calculator                       |                                          |
+| [[*09-15 Tuesday (Lecture)][09-15]] | Polymorphism                                |                                          |
+| 09-16 |                                             | Last day to add or change to audit       |
+| [[*09-17 Thursday (Lecture)][09-17]] | Products, Sums, Algebraic Data Types        | A3 out, A2 due                           |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*09-21 Monday (Quiz 1)][09-21]] | Quiz 1                                      |                                          |
+| [[*09-22 Tuesday (Lecture)][09-22]] | Inference Rules                             |                                          |
+| [[*09-24 Thursday (Lecture)][09-24]] | Derivations                                 | A4 out, A3 due                           |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*09-28 Monday (Lab 2)][09-28]] | Lab 2: Derivations                          |                                          |
+| [[*09-29 Tuesday (Lecture)][09-29]] | Higher-Order Programming                    |                                          |
+| [[*10-01 Thursday (Workshop)][10-01]] | Practical Functional Programming (Workshop) | A5 out, A4 due                           |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*10-05 Monday (Quiz 2)][10-05]] | Quiz 2                                      |                                          |
+| [[*10-06 Tuesday (Lecture)][10-06]] | Formal Grammar                              |                                          |
+| 10-07 |                                             | Last day to drop without a "W"           |
+| [[*10-08 Thursday (Lecture)][10-08]] | Basic Parsing                               | A5 due                                   |
+|-------+---------------------------------------------+------------------------------------------|
+| 10-12 | *No Lab*                                    | Indigenous People's Day                  |
+| [[*10-13 Tuesday (Midterm Review)][10-13]] | Midterm Review                              |                                          |
+| [[*10-15 Thursday (Midterm 1)][10-15]] | *Midterm 1*                                 | A6 out                                   |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*10-19 Monday (Lab 3)][10-19]] | Lab 3: S-Expressions                        |                                          |
+| [[*10-20 Tuesday (Lecture)][10-20]] | Operational Semantics                       |                                          |
+| [[*10-22 Thursday (Lecture)][10-22]] | Substitution (Workshop)                     | A7 out, A6 due                           |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*10-26 Monday (Quiz 3)][10-26]] | Quiz 3                                      |                                          |
+| [[*10-27 Tuesday (Lecture)][10-27]] | Simple Types                                |                                          |
+| [[*10-29 Thursday (Lecture)][10-29]] | Progress and Preservation                   | A8 out, A7 due                           |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*11-02 Monday (Lab 4)][11-02]] | Lab 4: Progress and Preservation            |                                          |
+| [[*11-03 Tuesday (Lecture)][11-03]] | Environment-based Semantics                 |                                          |
+| [[*11-05 Thursday (Lecture)][11-05]] | Closures                                    | A8 due                                   |
+| 11-06 |                                             | Last day to drop w/ "W" or designate P/F |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*11-09 Monday (Midterm Review)][11-09]] | Midterm Review                              |                                          |
+| [[*11-10 Tuesday (Midterm 2)][11-10]] | *Midterm 2*                                 |                                          |
+| [[*11-12 Thursday (Lecture)][11-12]] | Pattern Matching                            | A9 out                                   |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*11-16 Monday (Quiz 4)][11-16]] | Quiz 4                                      |                                          |
+| [[*11-17 Tuesday (Lecture)][11-17]] | Type Inference                              |                                          |
+| [[*11-19 Thursday (Lecture)][11-19]] | Unification (Workshop)                      | A10 out, A9 due                          |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*11-23 Monday (Lab 5)][11-23]] | Lab 5: ???                                  |                                          |
+| [[11-24 Tuesday (Lecture)][11-24]] | Principal Types and Specialization          |                                          |
+| 11-26 | *No Lecture*                                | Thanksgiving Recess                      |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*11-30 Monday (Quiz 5)][11-30]] | Quiz 5                                      |                                          |
+| [[*12-01 Tuesday (Lecture)][12-01]] | Desigining Rules                            |                                          |
+| [[*12-03 Thursday (Lecture)][12-03]] | A Case Study (Workshop)                     | A11 out, A10 due                         |
+|-------+---------------------------------------------+------------------------------------------|
+| [[*12-07 Monday (Final Exam Review)][12-07]] | Final Exam Review                           |                                          |
+| [[*12-08 Tuesday (Lecture)][12-08]] | Advanced Topic                              |                                          |
+| [[*12-10 Thursday (Lecture)][12-10]] | Advanced Topic                              | A11 due                                  |
+|-------+---------------------------------------------+------------------------------------------|
+| TBD   | *Final Exam*                                |                                          |
+|-------+---------------------------------------------+------------------------------------------|
+* Calendar
+#+begin_export html
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&showTitle=0&showTabs=0&showCalendars=0&showTz=0&mode=WEEK&src=Y18yYzczYjQzZjY2MTMyZjI1NjUyMGYxODNkNmNjYzVmMjI0ODg2Mjk2MzdmNGJhNTNhNWI0ZTVlY2U2YzRmNGVmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23e4c441" style="border-width:0" width="900" height="600" frameborder="0" scrolling="no"></iframe>
+#+end_export
+* Course Staff
++ Instructor: [[https://ankushdas.github.io][Ankush Das]] and [[https://nmmull.github.io][Nathan Mull]]
++ Teaching Fellow:
++ Teaching Assistant:
++ Course Assistants:
+
+/Do not contact course staff directly except in extenuating
+circumstances. If you have course-related questions/concerns, post on
+Piazza./
+* Schedule (Full)
+** 09-03 Thursday (Lecture)
++ Week: 1
++ Title: Introducing OCaml
++ Reading:
+  + Lecture Notes (LN) 1: Introduction
+  + OCaml Programming (OP) 1: [[https://cs3110.github.io/textbook/chapters/intro/intro.html][Better Programming Through OCaml]]
+  + OP 2: [[https://cs3110.github.io/textbook/chapters/basics/intro.html][The Basics of OCaml]]
++ Topics:
++ Learning Objectives:
+** 09-08 Tuesday (Lecture)
++ Week: 2
++ Title: Recursion and Lists
++ Reading:
+  + OP 3.1: [[https://cs3110.github.io/textbook/chapters/data/lists.html][Lists]]
+  + OP 3.6: [[https://cs3110.github.io/textbook/chapters/data/type_synonym.html][Type Synonyms]]
++ Topics:
++ Learning Objectives:
+** 09-10 Thursday (Workshop)
++ Week: 2
++ Title: Designing Functions
++ Reading:
++ Topics:
++ Learning Objectives:
+** 09-14 Monday (Lab 1)
++ Week: 3
++ Title: RPN Calculator
++ Topics:
++ Learning Objectives:
+** 09-15 Tuesday (Lecture)
++ Week: 3
++ Title: Polymorphism
++ Reading:
+  + OP 3.2: [[https://cs3110.github.io/textbook/chapters/data/variants.html][Variants]]
+  + OP 3.4: [[https://cs3110.github.io/textbook/chapters/data/records_tuples.html][Records and Tuples]]
+  + OP 3.8: [[https://cs3110.github.io/textbook/chapters/data/assoc_list.html][Association Lists]]
++ Topics:
++ Learning Objectives:
+** 09-17 Thursday (Lecture)
++ Week: 3
++ Title: Products, Sums, Algebraic Data Types
++ Reading:
+  + OP 3.5: [[https://cs3110.github.io/textbook/chapters/data/pattern_matching_advanced.html][Advanced Pattern Matching]]
+  + OP 3.7: [[https://cs3110.github.io/textbook/chapters/data/options.html][Options]]
+  + OP 3.9: [[https://cs3110.github.io/textbook/chapters/data/algebraic_data_types.html][Algebraic Data Types]]
+  + OP 3.11: [[https://cs3110.github.io/textbook/chapters/data/trees.html][Example: Trees]]
+  + OP 3.12: [[https://cs3110.github.io/textbook/chapters/data/nats.html][Example: Natural Numbers]]
++ Topics:
++ Learning Objectives:
+** 09-21 Monday (Quiz 1)
++ Week: 4
++ Topics:
+** 09-22 Tuesday (Lecture)
++ Week: 4
++ Title: Inference Rules
++ Reading:
+  + LN 2.1: Inference Rules
++ Topics:
++ Learning Objectives:
+** 09-24 Thursday (Lecture)
++ Week: 4
++ Title: Derivations
++ Reading:
+  + LN 2.2: Derivations
+  + LN 2.3: Extended Example: RPN Calculator
++ Topics:
++ Learning Objectives:
+** 09-28 Monday (Lab 2)
++ Week: 5
++ Title: Derivation Worksheet
++ Topics:
++ Learning Objectives:
+** 09-29 Tuesday (Lecture)
++ Week: 5
++ Title: Higher-Order Programming
++ Reading:
+  + OP 4: [[https://cs3110.github.io/textbook/chapters/hop/intro.html#][Higher-Order Programming]]
++ Topics:
++ Learning Objectives:
+** 10-01 Thursday (Workshop)
++ Week: 5
++ Title: Practical Functional Programming
++ Reading:
++ Topics:
++ Learning Objectives:
+** 10-05 Monday (Quiz 2)
++ Week: 6
++ Title:
++ Reading:
++ Topics:
++ Learning Objectives:
+** 10-06 Tuesday (Lecture)
++ Week: 6
++ Title: Formal Grammar
++ Reading:
++ Topics:
++ Learning Objectives:
+** 10-08 Thursday (Lecture)
++ Week: 6
++ Title: Basic Parsing
++ Reading:
++ Topics:
++ Learning Objectives:
+** 10-13 Tuesday (Midterm Review)
++ Week: 7
++ Topics:
+** 10-15 Thursday (Midterm 1)
++ Week: 7
+** 10-19 Monday (Lab 3)
++ Week: 8
++ Title:
++ Reading:
++ Topics:
++ Learning Objectives:
+** 10-20 Tuesday (Lecture)
++ Week: 8
++ Title: Operational Semantics
++ Reading:
++ Topics:
++ Learning Objectives:
+** 10-22 Thursday (Lecture)
++ Week: 8
++ Title: Substitution
++ Reading:
++ Topics:
++ Learning Objectives:
+** 10-26 Monday (Quiz 3)
++ Week: 9
++ Title:
++ Reading:
++ Topics:
++ Learning Objectives:
+** 10-27 Tuesday (Lecture)
++ Week: 9
++ Title: Simple Types
++ Reading:
++ Topics:
++ Learning Objectives:
+** 10-29 Thursday (Lecture)
++ Week: 9
++ Title: Progress and Preservation
++ Reading:
++ Topics:
++ Learning Objectives:
+** 11-02 Monday (Lab 4)
++ Week: 10
++ Title: Progress and Preservation
++ Reading:
++ Topics:
++ Learning Objectives:
+** 11-03 Tuesday (Lecture)
++ Week: 10
++ Title: Environment-based Semantics
++ Reading:
++ Topics:
++ Learning Objectives:
+** 11-05 Thursday (Lecture)
++ Week: 10
++ Title: Closures
++ Reading:
++ Topics:
++ Learning Objectives:
+** 11-09 Monday (Midterm Review)
++ Week: 11
++ Title:
++ Reading:
++ Topics:
++ Learning Objectives:
+** 11-10 Tuesday (Midterm 2)
++ Week: 11
+** 11-12 Thursday (Lecture)
++ Week: 11
++ Title: Pattern Matching
++ Reading:
++ Topics:
++ Learning Objectives:
+** 11-16 Monday (Quiz 4)
++ Week: 12
++ Title:
++ Reading:
++ Topics:
++ Learning Objectives:
+** 11-17 Tuesday (Lecture)
++ Week: 12
++ Title: Type Inference
++ Reading:
++ Topics:
++ Learning Objectives:
+** 11-19 Thursday (Lecture)
++ Week: 12
++ Title: Unification
++ Reading:
++ Topics:
++ Learning Objectives:
+** 11-23 Monday (Lab 5)
++ Week: 13
++ Title:
++ Reading:
++ Topics:
++ Learning Objectives:
+** 11-24 Tuesday (Lecture)
++ Week: 13
++ Title: Principal Types
++ Reading:
++ Topics:
++ Learning Objectives:
+** 11-30 Monday (Quiz 5)
++ Week: 14
++ Title:
++ Reading:
++ Topics:
++ Learning Objectives:
+** 12-01 Tuesday (Lecture)
++ Week: 14
++ Title: Designing Rules
++ Reading:
++ Topics:
++ Learning Objectives:
+** 12-03 Thursday (Lecture)
++ Week: 14
++ Title: A Case Study
++ Reading:
++ Topics:
++ Learning Objectives:
+** 12-07 Monday (Final Exam Review)
++ Week: 15
++ Title:
++ Reading:
++ Topics:
++ Learning Objectives:
+** 12-08 Tuesday (Lecture)
++ Week: 15
++ Title: Advanced Topic
++ Reading:
++ Topics:
++ Learning Objectives:
+** 12-10 Thursday (Lecture)
++ Week: 15
++ Title: Advanced Topic
++ Reading:
++ Topics:
++ Learning Objectives:
