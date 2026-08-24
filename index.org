@@ -19,7 +19,7 @@ language as an object of formal study.
 |-------+---------------------------------------------+------------------------------------------|
 | Date  | Topic                                       | Notes                                    |
 |-------+---------------------------------------------+------------------------------------------|
-| [[*09-02 WED (Lab 0)][09-02]] | Lab 0: Verifying your Set-up                | Read the course manual                   |
+| [[*09-02 WED (Lab 0)][09-02]] | Lab 0: Installation Party                   | Read the course manual                   |
 | [[*09-03 THU (Lecture)][09-03]] | Introducting OCaml                          | A1 out                                   |
 |-------+---------------------------------------------+------------------------------------------|
 | [[*09-08 TUE (Lecture)][09-08]] | Recursion and Lists                         |                                          |
@@ -97,9 +97,17 @@ Piazza./
 * Schedule (Full)
 ** 09-02 WED (Lab 0)
 + Week: 1
-+ Title: Verifying your Set-Up
++ Title: Installation Party
++ Reading:
+  + Lab 0: [[file:labs/lab01/lab01.org][Installation Party]]
 + Topics:
+  + Github
+  + Opam and Dune
 + Learning Objectives:
+  + Create a private mirror of our course repository where you'll put
+    solutions to assignments
+  + Verify that you have everything you'll need for labs and
+    assignments installed on your machine
 ** 09-03 THU (Lecture)
 + Week: 1
 + Title: Introducing OCaml

@@ -1,0 +1,267 @@
+#+title: Lab 0: Installation Party
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../style.css" />
+#+OPTIONS: html-style:nil H:3 toc:2
+#+HTML_LINK_HOME: ../../index.html
+
+There are several things you need to set up in order to work on the
+assignments and projects in this course.  The purpose of this document
+is to walk you through this process.
+
+#+begin_quote
+*Important.* If you're running Windows, then you are /required/ to [[https://learn.microsoft.com/en-us/windows/wsl/setup/environment][Set
+up a WSL development environment]].  If you're a Windows superuser you
+can try a native install, but we (likely) won't help you troubleshoot.
+#+end_quote
+
+* Course Repository
+We host the [[https://github.com/BU-CS320/cs320-f26][course repository]] on GitHub.  You'll need to host a
+*private* mirror of this repository, in which you'll include your
+solutions to assignments and projects. /This means you'll need a
+GitHub account./ We'll assume familiarity with Git; see the [[https://git-scm.com/docs/gittutorial][git
+tutorial]] if you need a refresher.  When we release any course material
+(e.g., lecture slides, starter code) it will be made available in the
+course repository, which you'll then be able to merge into your
+private mirror.
+
+** Mirroring the Course Repository
+1. *Create a GitHub account* if you haven't already.  You can use your
+   personal GitHub account if you have one.  /Note:/ Some students
+   have had issues setting using GitHub accounts with their BU email
+   addresses, so I would generally recommend using a personal account.
+2. *Create a personal access token.* This collection of instructions
+   assumes that you're using Git with HTTPS authentication.  If you
+   want to use SSH then you can skip this step, but we will not help
+   you troubleshoot.  Follow the GitHub Docs instructions on [[https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic][Creating
+   a personal access token]].
+3. *Create a private repository* on GitHub called
+   ~cs320-f26-private~. This repository *must be private* because it
+   will contain your solutions to assignments and projects.  If you've
+   never created a repository on GitHub, follow the GitHub Docs
+   tutorial on [[https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository][Creating a new repository]].
+4. *Mirror-push the course repository.*
+   1. Open a terminal and ~cd~ into the directory where you want to
+      put your coursework for CS320, e.g., I would type something
+      like:
+      #+begin_src bash
+        cd ~/Developer/Repositories
+      #+end_src
+   2. Clone the course repository:
+      #+begin_src bash
+        git clone https://github.com/BU-CS320/cs320-f26.git
+      #+end_src
+   3. Mirror-push the course repository into your private repository:
+      #+begin_src bash
+        git -C ./cs320-f26 push --mirror https://github.com/USERNAME/cs320-f26-private.git
+      #+end_src
+      replacing ~USERNAME~ with your GitHub username.
+   4. Clone your private repository:
+      #+begin_src bash
+        git clone https://github.com/USERNAME/cs320-f26-private.git
+      #+end_src
+   5. Add the course repository as a remote for your private repository:
+      #+begin_src bash
+        git -C ./cs320-f26-private remote add upstream https://github.com/BU-CS320/cs320-f26.git
+      #+end_src
+   6. Remove the clone of the course repository:
+      #+begin_src bash
+        rm -rf cs320-f26
+      #+end_src
+
+At this point you should have a directory called ~cs320-f26-private~,
+in which you'll put your solutions to assignments and projects.
+
+** Syncing with the Course Repository
+When materials are added to the course repository, you can easily
+merge them into your private repository. *You should get in the habit
+of doing this frequently.* You should ~cd~ to the directory for your
+private repository. Make sure to first commit any uncommitted changes.
+Then run the following commands.
+
+#+begin_src bash
+  git fetch upstream
+  git merge upstream/main main
+  git push
+#+end_src
+
+This will merge the updates to the course repository into your private
+repository both locally and on GitHub.  You should almost never need
+to resolve a merge conflict after doing this, but if you do, take a
+look at the GitHub Docs instructions on [[https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts][Addressing merge conflicts]] for
+a refresher on how to do this.
+
+* OCaml
+Next you need to set up your machine to be able to compile and run
+OCaml programs.
+
+** Installing Packages
+1. *Install opam.* [[https://opam.ocaml.org][opam]] is a package manager for OCaml.  Follow the
+   opam documentation instructions on [[https://opam.ocaml.org/doc/Install.html][How to install opam]] for your OS.
+   In short, use one of the following commands:
+
+   #+begin_src bash
+     # Homebrew (macOS)
+     brew install opam
+
+     # MacPorts (macOS)
+     port install opam
+
+     # Ubuntu
+     apt install opam
+
+     # Debian
+     apt-get install opam
+
+     # Arch Linux
+     pacman -S opam
+   #+end_src
+
+   and follow the associated instructions, e.g., make sure to run
+
+   #+begin_src bash
+     opam init
+   #+end_src
+
+   after opam is installed.
+2. *Create a switch.* A switch keeps track of a particular set of
+   packages you've installed.  We'll make a global switch intended to
+   be used for this course.
+
+   #+begin_src bash
+     opam switch create cs320-f26 5.2.1
+     opam switch cs320-f26
+     eval $(opam env)
+   #+end_src
+
+   /Note:/ Depending on the choices you made when installing opam, you
+   may need to run ~eval $(opam env)~ every time you open a fresh
+   terminal.
+3. *Clone the course standard library.* In the same place you put
+   ~cs320-f26-private~, run the following command:
+
+   #+begin_src bash
+     git clone https://github.com/nmmull/stdlib320.git
+   #+end_src
+   You should now have a directory with ~cs320-f26-private~ and
+   ~stdlib320~ as subdirectories.  There is [[https://nmmull.github.io/stdlib320/stdlib320/Stdlib320/index.html][documentation]] for this
+   library linked on the course webpage. We'll grade most assignments
+   under the assumption that you only have access to this library.
+4. *Install the packages for this course.* Run the following commands
+   in the directory where your ~cs320-f26-private~ and ~stdlib320~
+   live.  You can ignore any warnings associated with installing the
+   course standard library.
+
+   #+begin_src bash
+     opam update
+     opam install dune utop ounit2 menhir ocaml-lsp-server
+     opam install stdlib320/.
+   #+end_src
+
+** Setting up VSCode (Optional)
+If you plan on using VSCode, you should also install the [[https://marketplace.visualstudio.com/items?itemName=ocamllabs.ocaml-platform][OCaml
+Platform]] from the Visual Studio Marketplace.  /Note:/ Setting up
+VSCode is optional.  We won't always use VSCode in live-coding demos.
+We'll do our best to troubleshoot any issues you run into, but it
+won't be a priority.
+
+* Assignment Workflow
+Once everything is set up, working on an assignment will go roughly as
+follows.
+
+1. Sync with the course repository to get access to the assignment
+   (see the instructions above).
+2. Sync the environment with the course switch ~eval $(opam env)~ if
+   necessary.
+3. Fill in your solutions, make sure to commit your changes
+   frequently.
+4. From within the assignment ~lib~ directory, run ~dune build~
+   frequently to check your code.
+5. When you get close to completing the assignment, from within the
+   assignment directory, run ~dune test~ to test your code against a
+   small test suite we've provided. This collection of tests will
+   include some (but not all) tests used for grading.  /Note:/ The
+   tests for now come in the form of [[https://cs3110.github.io/textbook/chapters/basics/expressions.html#assertions][assertions]].  This means that *if
+   you fail an assertion, the following assertions will not be
+   tested*.  You can comment out assertions in order to avoid testing
+   them.
+6. /(Optional)/ Add your own assertions to the file
+   ~tests/test_assignX.ml~.
+7. Push your work to your private repository and submit your
+   assignment. In Gradescope, you'll be prompted to choose a
+   repository and a commit to submit.  After submitting, you should
+   see a message which says that your assignment was accepted along
+   with information about some (but not all) of the tests that were
+   run.
+
+* Dune
+
+[[https://dune.build][Dune]] is a build tool for OCaml which we'll be using for the entirety
+of this course.  All assignments and projects in this course are given
+as dune projects.  The file structure of a dune project (e.g., of
+assignment 1) looks something like this:
+
+#+begin_src text
+  .
+  ├── bin
+  │   ├── dune
+  │   └── main.ml
+  ├── dune-project
+  ├── hello_dune.opam
+  ├── lib
+  │   ├── dune
+  │   └── assign1.ml
+  └── test
+      ├── dune
+      └── test_assign1.ml
+#+end_src
+
+The ~bin~ file contains the executable associated with the project
+~lib~ directory contains the source code, and the ~test~ directory
+contains the test suite.  There are a handful of dune commands that
+you will need to become familiar with.  You should run these in the
+root of the project.
+
+|---------------------+-----------------------------------------------------------------------|
+| ~dune build~        | Build the project                                                     |
+| ~dune exec assign1~ | Run the executable ~assign1~ of the project (as defined in ~main.ml~) |
+| ~dune utop~         | Open Utop in a way that is project aware                              |
+| ~dune test~         | Run the test suite of th project                                      |
+| ~dune clean~        | delete auxiliary files created during building                        |
+|---------------------+-----------------------------------------------------------------------|
+
+* Utop
+
+Utop is an interface for OCaml's toplevel, like Python's REPL.  It's a
+standalone program, you can type in your terminal:
+
+#+begin_src bash
+  utop
+#+end_src
+
+and from there you can type in any OCaml expression followed by two
+semicolons ~;;~, which Utop will evaluate, e.g.:
+
+#+begin_src text
+  utop # 2 + 2;;
+  - : int = 4
+#+end_src
+
+When you're done, type ~#quit~ to leave Utop.
+
+/Note:/ It is more common for us to use Utop via Dune so that it runs
+in a /project aware/ way.  For example, if you run
+
+#+begin_src bash
+  dune utop
+#+end_src
+
+Then you should be able to refer to values you've defined in
+~lib/assign1.ml~ using, e.g.
+
+#+begin_src ocaml
+  utop # Assign1.sqrt 10
+  _ : int = 4
+#+end_src
+
+~Assign1~ is the name of the *module* defined by the file
+~lib/assign1.ml~ (module is like a namespace, it encasulates a
+collection of functions, more on that later).

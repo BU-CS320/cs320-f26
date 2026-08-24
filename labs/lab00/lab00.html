@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-08-24 Mon 13:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lab 0: Installation Party</title>
+<meta name="author" content="Nathan" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="../../style.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">[<a href="../../index.html">back</a>]</div><div id="content" class="content">
+<h1 class="title">Lab 0: Installation Party</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgfd818d6">1. Course Repository</a>
+<ul>
+<li><a href="#org789bdbc">1.1. Mirroring the Course Repository</a></li>
+<li><a href="#org4b2f333">1.2. Syncing with the Course Repository</a></li>
+</ul>
+</li>
+<li><a href="#org07867e9">2. OCaml</a>
+<ul>
+<li><a href="#orgfdd4eb2">2.1. Installing Packages</a></li>
+<li><a href="#org13c1264">2.2. Setting up VSCode (Optional)</a></li>
+</ul>
+</li>
+<li><a href="#orgee7b015">3. Assignment Workflow</a></li>
+<li><a href="#org607daec">4. Dune</a></li>
+<li><a href="#orga248da9">5. Utop</a></li>
+</ul>
+</div>
+</div>
+<p>
+There are several things you need to set up in order to work on the
+assignments and projects in this course.  The purpose of this document
+is to walk you through this process.
+</p>
+
+<blockquote>
+<p>
+<b>Important.</b> If you're running Windows, then you are <i>required</i> to <a href="https://learn.microsoft.com/en-us/windows/wsl/setup/environment">Set
+up a WSL development environment</a>.  If you're a Windows superuser you
+can try a native install, but we (likely) won't help you troubleshoot.
+</p>
+</blockquote>
+<div id="outline-container-orgfd818d6" class="outline-2">
+<h2 id="orgfd818d6"><span class="section-number-2">1.</span> Course Repository</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+We host the <a href="https://github.com/BU-CS320/cs320-f26">course repository</a> on GitHub.  You'll need to host a
+<b>private</b> mirror of this repository, in which you'll include your
+solutions to assignments and projects. <i>This means you'll need a
+GitHub account.</i> We'll assume familiarity with Git; see the <a href="https://git-scm.com/docs/gittutorial">git
+tutorial</a> if you need a refresher.  When we release any course material
+(e.g., lecture slides, starter code) it will be made available in the
+course repository, which you'll then be able to merge into your
+private mirror.
+</p>
+</div>
+<div id="outline-container-org789bdbc" class="outline-3">
+<h3 id="org789bdbc"><span class="section-number-3">1.1.</span> Mirroring the Course Repository</h3>
+<div class="outline-text-3" id="text-1-1">
+<ol class="org-ol">
+<li><b>Create a GitHub account</b> if you haven't already.  You can use your
+personal GitHub account if you have one.  <i>Note:</i> Some students
+have had issues setting using GitHub accounts with their BU email
+addresses, so I would generally recommend using a personal account.</li>
+<li><b>Create a personal access token.</b> This collection of instructions
+assumes that you're using Git with HTTPS authentication.  If you
+want to use SSH then you can skip this step, but we will not help
+you troubleshoot.  Follow the GitHub Docs instructions on <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic">Creating
+a personal access token</a>.</li>
+<li><b>Create a private repository</b> on GitHub called
+<code>cs320-f26-private</code>. This repository <b>must be private</b> because it
+will contain your solutions to assignments and projects.  If you've
+never created a repository on GitHub, follow the GitHub Docs
+tutorial on <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository">Creating a new repository</a>.</li>
+<li><b>Mirror-push the course repository.</b>
+<ol class="org-ol">
+<li><p>
+Open a terminal and <code>cd</code> into the directory where you want to
+put your coursework for CS320, e.g., I would type something
+like:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash"><span style="color: #483d8b;">cd</span> ~/Developer/Repositories
+</pre>
+</div></li>
+<li><p>
+Clone the course repository:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">git clone https://github.com/BU-CS320/cs320-f26.git
+</pre>
+</div></li>
+<li><p>
+Mirror-push the course repository into your private repository:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">git -C ./cs320-f26 push --mirror https://github.com/USERNAME/cs320-f26-private.git
+</pre>
+</div>
+<p>
+replacing <code>USERNAME</code> with your GitHub username.
+</p></li>
+<li><p>
+Clone your private repository:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">git clone https://github.com/USERNAME/cs320-f26-private.git
+</pre>
+</div></li>
+<li><p>
+Add the course repository as a remote for your private repository:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">git -C ./cs320-f26-private remote add upstream https://github.com/BU-CS320/cs320-f26.git
+</pre>
+</div></li>
+<li><p>
+Remove the clone of the course repository:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">rm -rf cs320-f26
+</pre>
+</div></li>
+</ol></li>
+</ol>
+
+<p>
+At this point you should have a directory called <code>cs320-f26-private</code>,
+in which you'll put your solutions to assignments and projects.
+</p>
+</div>
+</div>
+<div id="outline-container-org4b2f333" class="outline-3">
+<h3 id="org4b2f333"><span class="section-number-3">1.2.</span> Syncing with the Course Repository</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+When materials are added to the course repository, you can easily
+merge them into your private repository. <b>You should get in the habit
+of doing this frequently.</b> You should <code>cd</code> to the directory for your
+private repository. Make sure to first commit any uncommitted changes.
+Then run the following commands.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">git fetch upstream
+git merge upstream/main main
+git push
+</pre>
+</div>
+
+<p>
+This will merge the updates to the course repository into your private
+repository both locally and on GitHub.  You should almost never need
+to resolve a merge conflict after doing this, but if you do, take a
+look at the GitHub Docs instructions on <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts">Addressing merge conflicts</a> for
+a refresher on how to do this.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org07867e9" class="outline-2">
+<h2 id="org07867e9"><span class="section-number-2">2.</span> OCaml</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Next you need to set up your machine to be able to compile and run
+OCaml programs.
+</p>
+</div>
+<div id="outline-container-orgfdd4eb2" class="outline-3">
+<h3 id="orgfdd4eb2"><span class="section-number-3">2.1.</span> Installing Packages</h3>
+<div class="outline-text-3" id="text-2-1">
+<ol class="org-ol">
+<li><p>
+<b>Install opam.</b> <a href="https://opam.ocaml.org">opam</a> is a package manager for OCaml.  Follow the
+opam documentation instructions on <a href="https://opam.ocaml.org/doc/Install.html">How to install opam</a> for your OS.
+In short, use one of the following commands:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span style="color: #b22222;"># </span><span style="color: #b22222;">Homebrew (macOS)
+</span>brew install opam
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">MacPorts (macOS)
+</span>port install opam
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Ubuntu
+</span>apt install opam
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Debian
+</span>apt-get install opam
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Arch Linux
+</span>pacman -S opam
+</pre>
+</div>
+
+<p>
+and follow the associated instructions, e.g., make sure to run
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">opam init
+</pre>
+</div>
+
+<p>
+after opam is installed.
+</p></li>
+<li><p>
+<b>Create a switch.</b> A switch keeps track of a particular set of
+packages you've installed.  We'll make a global switch intended to
+be used for this course.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">opam switch create cs320-f26 5.2.1
+opam switch cs320-f26
+<span style="color: #483d8b;">eval</span> $(opam env)
+</pre>
+</div>
+
+<p>
+<i>Note:</i> Depending on the choices you made when installing opam, you
+may need to run <code>eval $(opam env)</code> every time you open a fresh
+terminal.
+</p></li>
+<li><p>
+<b>Clone the course standard library.</b> In the same place you put
+<code>cs320-f26-private</code>, run the following command:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">git clone https://github.com/nmmull/stdlib320.git
+</pre>
+</div>
+<p>
+You should now have a directory with <code>cs320-f26-private</code> and
+<code>stdlib320</code> as subdirectories.  There is <a href="https://nmmull.github.io/stdlib320/stdlib320/Stdlib320/index.html">documentation</a> for this
+library linked on the course webpage. We'll grade most assignments
+under the assumption that you only have access to this library.
+</p></li>
+<li><p>
+<b>Install the packages for this course.</b> Run the following commands
+in the directory where your <code>cs320-f26-private</code> and <code>stdlib320</code>
+live.  You can ignore any warnings associated with installing the
+course standard library.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">opam update
+opam install dune utop ounit2 menhir ocaml-lsp-server
+opam install stdlib320/.
+</pre>
+</div></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org13c1264" class="outline-3">
+<h3 id="org13c1264"><span class="section-number-3">2.2.</span> Setting up VSCode (Optional)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+If you plan on using VSCode, you should also install the <a href="https://marketplace.visualstudio.com/items?itemName=ocamllabs.ocaml-platform">OCaml
+Platform</a> from the Visual Studio Marketplace.  <i>Note:</i> Setting up
+VSCode is optional.  We won't always use VSCode in live-coding demos.
+We'll do our best to troubleshoot any issues you run into, but it
+won't be a priority.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgee7b015" class="outline-2">
+<h2 id="orgee7b015"><span class="section-number-2">3.</span> Assignment Workflow</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Once everything is set up, working on an assignment will go roughly as
+follows.
+</p>
+
+<ol class="org-ol">
+<li>Sync with the course repository to get access to the assignment
+(see the instructions above).</li>
+<li>Sync the environment with the course switch <code>eval $(opam env)</code> if
+necessary.</li>
+<li>Fill in your solutions, make sure to commit your changes
+frequently.</li>
+<li>From within the assignment <code>lib</code> directory, run <code>dune build</code>
+frequently to check your code.</li>
+<li>When you get close to completing the assignment, from within the
+assignment directory, run <code>dune test</code> to test your code against a
+small test suite we've provided. This collection of tests will
+include some (but not all) tests used for grading.  <i>Note:</i> The
+tests for now come in the form of <a href="https://cs3110.github.io/textbook/chapters/basics/expressions.html#assertions">assertions</a>.  This means that <b>if
+you fail an assertion, the following assertions will not be
+tested</b>.  You can comment out assertions in order to avoid testing
+them.</li>
+<li><i>(Optional)</i> Add your own assertions to the file
+<code>tests/test_assignX.ml</code>.</li>
+<li>Push your work to your private repository and submit your
+assignment. In Gradescope, you'll be prompted to choose a
+repository and a commit to submit.  After submitting, you should
+see a message which says that your assignment was accepted along
+with information about some (but not all) of the tests that were
+run.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org607daec" class="outline-2">
+<h2 id="org607daec"><span class="section-number-2">4.</span> Dune</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+<a href="https://dune.build">Dune</a> is a build tool for OCaml which we'll be using for the entirety
+of this course.  All assignments and projects in this course are given
+as dune projects.  The file structure of a dune project (e.g., of
+assignment 1) looks something like this:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">.
+&#9500;&#9472;&#9472; bin
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; dune
+&#9474;&#160;&#160; &#9492;&#9472;&#9472; main.ml
+&#9500;&#9472;&#9472; dune-project
+&#9500;&#9472;&#9472; hello_dune.opam
+&#9500;&#9472;&#9472; lib
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; dune
+&#9474;&#160;&#160; &#9492;&#9472;&#9472; assign1.ml
+&#9492;&#9472;&#9472; test
+    &#9500;&#9472;&#9472; dune
+    &#9492;&#9472;&#9472; test_assign1.ml
+</pre>
+</div>
+
+<p>
+The <code>bin</code> file contains the executable associated with the project
+<code>lib</code> directory contains the source code, and the <code>test</code> directory
+contains the test suite.  There are a handful of dune commands that
+you will need to become familiar with.  You should run these in the
+root of the project.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><code>dune build</code></td>
+<td class="org-left">Build the project</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>dune exec assign1</code></td>
+<td class="org-left">Run the executable <code>assign1</code> of the project (as defined in <code>main.ml</code>)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>dune utop</code></td>
+<td class="org-left">Open Utop in a way that is project aware</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>dune test</code></td>
+<td class="org-left">Run the test suite of th project</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>dune clean</code></td>
+<td class="org-left">delete auxiliary files created during building</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orga248da9" class="outline-2">
+<h2 id="orga248da9"><span class="section-number-2">5.</span> Utop</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Utop is an interface for OCaml's toplevel, like Python's REPL.  It's a
+standalone program, you can type in your terminal:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">utop
+</pre>
+</div>
+
+<p>
+and from there you can type in any OCaml expression followed by two
+semicolons <code>;;</code>, which Utop will evaluate, e.g.:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">utop # 2 + 2;;
+- : int = 4
+</pre>
+</div>
+
+<p>
+When you're done, type <code>#quit</code> to leave Utop.
+</p>
+
+<p>
+<i>Note:</i> It is more common for us to use Utop via Dune so that it runs
+in a <i>project aware</i> way.  For example, if you run
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">dune utop
+</pre>
+</div>
+
+<p>
+Then you should be able to refer to values you've defined in
+<code>lib/assign1.ml</code> using, e.g.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-ocaml">utop # <span style="color: #228b22;">Assign1.</span>sqrt 10
+_ : int = 4
+</pre>
+</div>
+
+<p>
+<code>Assign1</code> is the name of the <b>module</b> defined by the file
+<code>lib/assign1.ml</code> (module is like a namespace, it encasulates a
+collection of functions, more on that later).
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
