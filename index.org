@@ -10,7 +10,7 @@
 language as an object of formal study.
 
 * Links
-+ Course Manual
++ [[file:course-manual.pdf][Course Manual]]
 + [[https://github.com/BU-CS320/cs320-f26][Course Repository]]
 + [[https://nmmull.github.io/stdlib320/stdlib320/Stdlib320/index.html][Course Standard Library]]
 + [[https://piazza.com/bu/fall2026/cascs320/home][Piazza]]
