@@ -99,7 +99,7 @@ Piazza./
 + Week: 1
 + Title: Installation Party
 + Reading:
-  + Lab 0: [[file:labs/lab01/lab01.org][Installation Party]]
+  + Lab 0: [[file:labs/lab00/lab00.org][Installation Party]]
 + Topics:
   + Github
   + Opam and Dune
