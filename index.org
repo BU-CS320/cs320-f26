@@ -5,7 +5,7 @@
 
 -----
 
-*(UNDER CONSTRUCTION)* CS320 is a course about programming languages: their *design* and
+CS320 is a course about programming languages: their *design* and
 *implementation*.  We take up the programming
 language as an object of formal study.
 
