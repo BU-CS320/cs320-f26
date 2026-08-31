@@ -5,8 +5,8 @@
 
 -----
 
-*(UNDER CONSTRUCTION)* CS320 is a course about programming languages, the *design* and
-*implementation* of programming languages.  We take up the programming
+*(UNDER CONSTRUCTION)* CS320 is a course about programming languages: their *design* and
+*implementation*.  We take up the programming
 language as an object of formal study.
 
 * Links
@@ -20,7 +20,7 @@ language as an object of formal study.
 | Date  | Topic                                       | Notes                                    |
 |-------+---------------------------------------------+------------------------------------------|
 | [[*09-02 WED (Lab 0)][09-02]] | Lab 0: Installation Party                   | Read the course manual                   |
-| [[*09-03 THU (Lecture)][09-03]] | Introducting OCaml                          | A1 out                                   |
+| [[*09-03 THU (Lecture)][09-03]] | Introducing OCaml                           | A1 out                                   |
 |-------+---------------------------------------------+------------------------------------------|
 | [[*09-08 TUE (Lecture)][09-08]] | Recursion and Lists                         |                                          |
 | [[*09-09 WED (Lab 1)][09-09]] | Lab 1: Practice, Practice, Practice         |                                          |
@@ -65,19 +65,19 @@ language as an object of formal study.
 |-------+---------------------------------------------+------------------------------------------|
 | [[*11-17 TUE (Lecture)][11-17]] | Type Inference                              |                                          |
 | [[*11-18 WED (Lab 5)][11-18]] | Lab 5                                       |                                          |
-| [[*11-19 THU (Lecture)][11-19]] | Unification (Workshop)                      | A10 out, A9 due                          |
+| [[*11-19 THU (Lecture)][11-19]] | Unification (Workshop)                      | FP out, A9 due                           |
 |-------+---------------------------------------------+------------------------------------------|
-| [[11-24 TUE (Lecture)][11-24]] | Principal Types and Specialization          |                                          |
+| [[*11-24 TUE (Lecture)][11-24]] | Principal Types and Specialization          |                                          |
 | 11-25 | *No Lab*                                    | Thanksgiving Recess                      |
 | 11-26 | *No Lecture*                                | Thanksgiving Recess                      |
 |-------+---------------------------------------------+------------------------------------------|
-| [[*12-01 TUE (Lecture)][12-01]] | Desigining Rules                            |                                          |
+| [[*12-01 TUE (Lecture)][12-01]] | Designing Rules                             |                                          |
 | [[*12-02 WED (Quiz 5)][12-02]] | Quiz 5                                      |                                          |
-| [[*12-03 THU (Lecture)][12-03]] | A Case Study (Workshop)                     | A11 out, A10 due                         |
+| [[*12-03 THU (Lecture)][12-03]] | A Case Study (Workshop)                     |                                          |
 |-------+---------------------------------------------+------------------------------------------|
 | [[*12-08 TUE (Lecture)][12-08]] | Advanced Topic                              |                                          |
 | [[*12-09 WED (Final Exam Review)][12-09]] | Final Exam Review                           |                                          |
-| [[*12-10 THU (Lecture)][12-10]] | Advanced Topic                              | A11 due                                  |
+| [[*12-10 THU (Lecture)][12-10]] | Advanced Topic                              | FP due                                   |
 |-------+---------------------------------------------+------------------------------------------|
 | [[*12-17 THU (Final Exam)][12-17]] | *Final Exam*                                | 3:00PM--5:00PM                           |
 |-------+---------------------------------------------+------------------------------------------|
@@ -86,7 +86,7 @@ language as an object of formal study.
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&showTitle=0&showTabs=0&showCalendars=0&showTz=0&mode=WEEK&src=Y18yYzczYjQzZjY2MTMyZjI1NjUyMGYxODNkNmNjYzVmMjI0ODg2Mjk2MzdmNGJhNTNhNWI0ZTVlY2U2YzRmNGVmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23e4c441" style="border-width:0" width="900" height="600" frameborder="0" scrolling="no"></iframe>
 #+end_export
 * Course Staff
-+ Instructor: [[https://ankushdas.github.io][Ankush Das]] and [[https://nmmull.github.io][Nathan Mull]]
++ Instructors: [[https://ankushdas.github.io][Ankush Das]] and [[https://nmmull.github.io][Nathan Mull]]
 + Teaching Fellow:
 + Teaching Assistant:
 + Course Assistants:
@@ -112,19 +112,40 @@ Piazza./
 + Week: 1
 + Title: Introducing OCaml
 + Reading:
-  + Lecture Notes (LN) 1: Introduction
-  + OCaml Programming (OP) 1: [[https://cs3110.github.io/textbook/chapters/intro/intro.html][Better Programming Through OCaml]]
-  + OP 2: [[https://cs3110.github.io/textbook/chapters/basics/intro.html][The Basics of OCaml]]
+  + Required:
+    + Lecture Notes (LN) 1: Introduction
+    + OCaml Programming (OP) 1: [[https://cs3110.github.io/textbook/chapters/intro/intro.html][Better Programming Through OCaml]]
+    + OP 2: [[https://cs3110.github.io/textbook/chapters/basics/intro.html][The Basics of OCaml]]
+  + Optional:
+    + Wallace Stevens: [[https://www.poetryfoundation.org/poems/43429/disillusionment-of-ten-oclock][Disillusionment of Ten O'Clock]]
 + Topics:
+  + syntax, typing and semantics
+  + OCaml
+  + expressions and evaluation
+  + literals, let-expressions, if-expressions, functions and
+    applications
 + Learning Objectives:
+  + Determine what the course is about (i.e., what is a programming
+    language?)
+  + Start getting comfortable with OCaml
 ** 09-08 TUE (Lecture)
 + Week: 2
 + Title: Recursion and Lists
 + Reading:
-  + OP 3.1: [[https://cs3110.github.io/textbook/chapters/data/lists.html][Lists]]
-  + OP 3.6: [[https://cs3110.github.io/textbook/chapters/data/type_synonym.html][Type Synonyms]]
+  + Required:
+    + OP 2: [[https://cs3110.github.io/textbook/chapters/basics/intro.html][The Basics of OCaml]]
+    + OP 3.1: [[https://cs3110.github.io/textbook/chapters/data/lists.html][Lists]]
+    + OP 3.6: [[https://cs3110.github.io/textbook/chapters/data/type_synonym.html][Type Synonyms]]
+  + Optional:
+    + [[https://link.springer.com/book/10.1007/978-3-030-80795-5][Structural Geology]] 1: Introduction
 + Topics:
+  + more on expressions
+  + lists and pattern matching
+  + tail recursion
 + Learning Objectives:
+  + Start working with lists
+  + Determine the point of tail recursion
+  + Do many examples with lists
 ** 09-09 WED (Lab 1)
 + Week: 2
 + Title: Practice, Practice, Practice
@@ -134,17 +155,35 @@ Piazza./
 + Week: 2
 + Title: Designing Functions
 + Reading:
+  + Required:
+    + How to Design Programs: [[https://htdp.org/2026-5-28//Book/part_preface.html#(part._sec~3asystematic-design)][Systematic Program Design]]
+  + Optional:
+    + Edsger W. Dijkstra: [[https://www.cs.utexas.edu/~EWD/ewd12xx/EWD1209.PDF][Why American Computing Science seems incurable]]
 + Topics:
+  + writing algorithms in OCaml
 + Learning Objectives:
+  + Practice, practice, practice OCaml
+  + Try to simulate "normal" programming reasoning in OCaml
 ** 09-15 TUE (Lecture)
 + Week: 3
 + Title: Polymorphism
 + Reading:
-  + OP 3.2: [[https://cs3110.github.io/textbook/chapters/data/variants.html][Variants]]
-  + OP 3.4: [[https://cs3110.github.io/textbook/chapters/data/records_tuples.html][Records and Tuples]]
-  + OP 3.8: [[https://cs3110.github.io/textbook/chapters/data/assoc_list.html][Association Lists]]
+  + Required:
+    + OP 3.2: [[https://cs3110.github.io/textbook/chapters/data/variants.html][Variants]]
+    + OP 3.4: [[https://cs3110.github.io/textbook/chapters/data/records_tuples.html][Records and Tuples]]
+    + OP 3.8: [[https://cs3110.github.io/textbook/chapters/data/assoc_list.html][Association Lists]]
+  + Optional:
+    + George Saunders: [[https://www.theparisreview.org/blog/2025/03/24/she-who-helps-see/?src=longreads][She Who Helps See]]
 + Topics:
+  + parametric polymorphism vs. ad hoc polymorphism
+  + type parameters and type inference
 + Learning Objectives:
+  + Begin to get a sense of how to use parametric polymorphism to
+    write general code
+  + Begin to get a sense of what restricts the type of an expression,
+    i.e., when a function can and cannot be polymorphic (you should
+    over time be able to determine the type of a small expression by
+    reading it)
 ** 09-16 WED (Quiz 1)
 + Week: 3
 + Topics:
@@ -152,20 +191,40 @@ Piazza./
 + Week: 3
 + Title: Products, Sums, Algebraic Data Types
 + Reading:
-  + OP 3.5: [[https://cs3110.github.io/textbook/chapters/data/pattern_matching_advanced.html][Advanced Pattern Matching]]
-  + OP 3.7: [[https://cs3110.github.io/textbook/chapters/data/options.html][Options]]
-  + OP 3.9: [[https://cs3110.github.io/textbook/chapters/data/algebraic_data_types.html][Algebraic Data Types]]
-  + OP 3.11: [[https://cs3110.github.io/textbook/chapters/data/trees.html][Example: Trees]]
-  + OP 3.12: [[https://cs3110.github.io/textbook/chapters/data/nats.html][Example: Natural Numbers]]
+  + Required:
+    + OP 3.5: [[https://cs3110.github.io/textbook/chapters/data/pattern_matching_advanced.html][Advanced Pattern Matching]]
+    + OP 3.7: [[https://cs3110.github.io/textbook/chapters/data/options.html][Options]]
+    + OP 3.9: [[https://cs3110.github.io/textbook/chapters/data/algebraic_data_types.html][Algebraic Data Types]]
+    + OP 3.11: [[https://cs3110.github.io/textbook/chapters/data/trees.html][Example: Trees]]
+    + OP 3.12: [[https://cs3110.github.io/textbook/chapters/data/nats.html][Example: Natural Numbers]]
+  + Optional:
+    + Rebecca Burditt: [[https://online.ucpress.edu/gastronomica/article/26/1/73/216809/Sweet-RuinCakes-and-the-Visual-Culture-of-Anxiety][Sweet Ruin: Cakes and the Visual Culture of Anxiety, 1945–1960]]
 + Topics:
+  + tuples and records
+  + algebraic data types
+  + constructors/variants
+  + designing expressive types
+  + general pattern matching
 + Learning Objectives:
+  + See how to organize data for a given programming task
+  + Learn to use pattern matching to design basic recursive functions
+  + Start thinking about data-driven programming
 ** 09-22 TUE (Lecture)
 + Week: 4
 + Title: Inference Rules
 + Reading:
-  + LN 2.1: Inference Rules
+  + Required:
+    + LN 2.1: Inference Rules
+  + Optional:
+    + Graham Priest: [[https://grahampriest.net/publications/papers/#1979][A Note on the Sorites Paradox]]
 + Topics:
+  + inference systems
+  + typing and semantic judgments
+  + variable declarations and contexts
 + Learning Objectives:
+  + Learn to read and write typing/semantic judgments
+  + See how inference rules can help us formally specify programming
+    languages
 ** 09-23 WED (Lab 2)
 + Week: 4
 + Title: Calculator
@@ -175,17 +234,35 @@ Piazza./
 + Week: 4
 + Title: Derivations
 + Reading:
-  + LN 2.2: Derivations
-  + LN 2.3: Extended Example: RPN Calculator
+  + Required:
+    + LN 2.2: Derivations
+    + LN 2.3: Extended Example: RPN Calculator
+  + Optional:
+    + John Berryman: [[https://www.poetryfoundation.org/poems/47534/dream-song-14][Dream Song 14]]
 + Topics:
+  + metavariables in inference rules
+  + constructing derivations
 + Learning Objectives:
+  + Learn to build a derivation of a judgment within an inference
+    system (and also understand what this establishes)
+  + Learn to translate formal derivation trees into English proof, and
+    vice versa
+  + Work through a number of examples
 ** 09-29 TUE (Lecture)
 + Week: 5
 + Title: Higher-Order Programming
 + Reading:
-  + OP 4: [[https://cs3110.github.io/textbook/chapters/hop/intro.html#][Higher-Order Programming]]
+  + Required:
+    + OP 4: [[https://cs3110.github.io/textbook/chapters/hop/intro.html#][Higher-Order Programming]]
+  + Optional:
+    + D. B. Newell et. al: [[https://iopscience.iop.org/article/10.1088/1681-7575/aa950a][The CODATA 2017 values of $h$, $e$, $k$, and $N_A$ for the revision of the SI]]
 + Topics:
+  + abstraction principle
+  + maps, filters, and folds
+  + higher-order programming and tail recursion
 + Learning Objectives:
+  + See how to use higher-order programming to further generalize code
+  + Learn to do basic "iterative" reasoning with folds
 ** 09-30 WED (Quiz 2)
 + Week: 5
 + Topics:
@@ -193,115 +270,277 @@ Piazza./
 + Week: 5
 + Title: Practical Functional Programming
 + Reading:
+  + Required:
+    + OP 3.3: [[https://cs3110.github.io/textbook/chapters/data/ounit.html][Unit Testing with OUnit]]
+    + OP 3.10: [[https://cs3110.github.io/textbook/chapters/data/exceptions.html][Exceptions]]
+    + OP 4.6: [[https://cs3110.github.io/textbook/chapters/hop/pipelining.html][Pipelining]]
+    + OP 5.2: [[https://cs3110.github.io/textbook/chapters/modules/modules.html][Modules]]
+    + OP 5.4: [[https://cs3110.github.io/textbook/chapters/modules/encapsulation.html][Encapsulation]]
+    + OP 5.6: [[https://cs3110.github.io/textbook/chapters/modules/functional_data_structures.html][Functional Data Structures]]
+  + Optional:
+    + Mary Shelley: [[https://www.gutenberg.org/ebooks/84][Frankenstein; or, the Modern Prometheus]] (letters)
 + Topics:
+  + OUnit
+  + exceptions
+  + modules
+  + "actual" OCaml programming
 + Learning Objectives:
+  + Get accustomed to a hodge-podge of topics that don't fit exactly
+    into our schedule but are good to have seen
 ** 10-06 TUE (Lecture)
 + Week: 6
 + Title: Formal Grammar
 + Reading:
+  + Required:
+    + LN 3.(1-3): Formal Grammar
+  + Optional:
+    + Mary Shelley: [[https://www.gutenberg.org/ebooks/84][Frankenstein; or, the Modern Prometheus]] (ch. 1-5)
 + Topics:
+  + Backus-Naur Form (BNF)
+  + production rules
+  + derivations and parse trees
 + Learning Objectives:
+  + Begin to recognize if a sentence is recognized by a grammar
+  + Learn to draw parse trees for a sentence recognized by a grammar
 ** 10-07 WED (Lab 3)
++ Week: 6
++ Title: Writing Tests
++ Learning Objectives:
+  + Get some practice with OUnit so that you're prepared to write your
+    own tests
 ** 10-08 THU (Lecture)
 + Week: 6
 + Title: Basic Parsing
 + Reading:
+  + Required:
+    + LN 3.(4-6): Formal Grammar
+    + OP 10.2: [[https://cs3110.github.io/textbook/chapters/interp/parsing.html][Parsing]]
+  + Optional:
+    + Mary Shelley: [[https://www.gutenberg.org/ebooks/84][Frankenstein; or, the Modern Prometheus]] (ch. 6-10)
 + Topics:
+  + grammatical ambiguity
+  + lexical analysis
 + Learning Objectives:
+  + Get a sense of what makes lexing and parsing challenging
+  + Get just enough background to build basic parsers we'll use for
+    the remainder of the semester
 ** 10-14 WED (Midterm Review)
++ Week: 7
 ** 10-15 THU (Midterm 1)
 + Week: 7
++ Topics:
 ** 10-20 TUE (Lecture)
 + Week: 8
 + Title: Operational Semantics
 + Reading:
+  + Required:
+  + Optional:
+    + Mary Shelley: [[https://www.gutenberg.org/ebooks/84][Frankenstein; or, the Modern Prometheus]] (ch. 11-15)
 + Topics:
+  + small-step vs. big-step semantics
+  + evaluation strategies/orders
+  + semantic derivations
 + Learning Objectives:
+  + Review how to read and write semantic inference rules
+  + Review how to write semantic derivations, this time for small-step
+    semantics
+  + Learn how formal semantics corresponds with evaluation in an
+    interpreter
 ** 10-21 WED (Lab 4)
++ Week: 8
++ Title: S-Expressions
++ Learning Objectives:
+  + Build an S-expression parser that you can use for future
+    assignments
 ** 10-22 THU (Lecture)
 + Week: 8
 + Title: Substitution
 + Reading:
+  + Required:
+    + OP 10.3: [[https://cs3110.github.io/textbook/chapters/interp/substitution.html][Substitution Model]]
+  + Optional:
+    + Mary Shelley: [[https://www.gutenberg.org/ebooks/84][Frankenstein; or, the Modern Prometheus]] (ch. 16-20)
 + Topics:
+  + λ-calculus
+  + call-by-name vs. call-by-value
+  + capture-avoiding substitution
 + Learning Objectives:
+  + Discuss in detail substitution semantics for the (untyped)
+    λ-calculus
+  + Understand the benefits and downsides to CBN and CBV evaluation
+    strategies
 ** 10-27 TUE (Lecture)
 + Week: 9
 + Title: Simple Types
 + Reading:
+  + Required:
+    + OCP 10.5: [[https://cs3110.github.io/textbook/chapters/interp/typecheck.html][Type Checking]]
+  + Optional:
+    + Mary Shelley: [[https://www.gutenberg.org/ebooks/84][Frankenstein; or, the Modern Prometheus]] (ch. 21-24)
 + Topics:
+  + simply typed lambda calculus
+  + type uniqueness
 + Learning Objectives:
+  + Discuss type systems in general
+  + Discuss the trade-offs of typed vs. untyped PLs
+  + Introduce the notation of type safety
+  + See more typing derivation examples
 ** 10-28 WED (Quiz 3)
++ Week: 9
++ Topics:
 ** 10-29 THU (Lecture)
 + Week: 9
 + Title: Progress and Preservation
 + Reading:
+  + Required:
+    + LN A: Trees
+  + Optional:
+    + Adriana Craciun: [[https://online.ucpress.edu/ncl/article/65/4/433/66637/Writing-the-Disaster-Franklin-and-Frankenstein][Writing the Disaster: Franklin and Frankenstein]]
 + Topics:
+  + structural induction
+  + induction over derivations
+  + substitution lemma
 + Learning Objectives:
+  + Learn how to prove things about PLs
+  + Demonstrate the type safety of STLC
 ** 11-03 TUE (Lecture)
 + Week: 10
 + Title: Environment-based Semantics
 + Reading:
+  + Required:
+    + OCP 10.4: [[https://cs3110.github.io/textbook/chapters/interp/environment.html][Environment Model]]
+  + Optional:
+    + Edwin Abbott Abbott: [[https://www.gutenberg.org/ebooks/45506][Flatland: A Romance of Many Dimensions]] (§1-7)
 + Topics:
+  + lexical vs. dynamic scoping
+  + environments and closures
 + Learning Objectives:
+  + See how to make our interpreter implementations more efficient by
+    avoiding unnecessary substitutions and storing bindings in an
+    environment
 ** 11-04 WED (Quiz 4)
++ Week: 10
++ Topics:
 ** 11-05 THU (Lecture)
 + Week: 10
 + Title: Closures
 + Reading:
+  + Required:
+    + OCP 10.4: [[https://cs3110.github.io/textbook/chapters/interp/environment.html][Environment Model]]
+  + Optional:
+    + Edwin Abbott Abbott: [[https://www.gutenberg.org/ebooks/45506][Flatland: A Romance of Many Dimensions]] (§8-14)
 + Topics:
+  + named closures and recursion
 + Learning Objectives:
+  + Discuss how to deal with recursion when working with closures
 ** 11-10 TUE (Lecture)
 + Week: 11
 + Title: Pattern Matching
 + Reading:
+  + Required:
+  + Optional:
+    + Edwin Abbott Abbott: [[https://www.gutenberg.org/ebooks/45506][Flatland: A Romance of Many Dimensions]] (§15-22)
 + Topics:
+  + patterns and match expressions
+  + shallow vs. deep pattern matching
 + Learning Objectives:
+  + Formally describe how pattern matching works
 ** 11-11 WED (Midterm Review)
++ Week: 11
++ Topics:
 ** 11-12 THU (Midterm 2)
 + Week: 11
++ Topics:
 ** 11-17 TUE (Lecture)
 + Week: 12
 + Title: Type Inference
 + Reading:
+  + Required:
+    + OCP 10.6: [[https://cs3110.github.io/textbook/chapters/interp/inference.html][Type Inference]]
+  + Optional:
+    + Justin Prystash: [[https://online.ucpress.edu/sfs/article/53/1/80/217344/Reality-GamesModeling-the-Universe-in-Dimensional][Reality Games: Modeling the Universe in Dimensional Fiction]]
 + Topics:
+  + type parameters and quantification
+  + monotypes, polytypes, type schemes
+  + constraint-based inference
+  + Hindley-Milner type inference
 + Learning Objectives:
+  + Get a sense of how OCaml "actually" determines the type of an
+    expression
 ** 11-18 WED (Lab 5)
++ Week: 11
++ Title:
++ Topics:
 ** 11-19 THU (Lecture)
 + Week: 12
 + Title: Unification
 + Reading:
+  + Required:
+    + OCP 10.6: [[https://cs3110.github.io/textbook/chapters/interp/inference.html][Type Inference]]
+  + Optional:
+    + Samuel Beckett: [[https://www.youtube.com/watch?v=izX5dIzI2RE][Waiting for Godot]] (act I)
 + Topics:
+  + type unification
+  + unification constraints
+  + most general unifiers
 + Learning Objectives:
+  + Learn an algorithm for unifying a collection of type constraints
+    generated by constraint-based inference
+  + Practice unifying type constraints
 ** 11-24 TUE (Lecture)
 + Week: 13
 + Title: Principal Types
 + Reading:
+  + Required:
+    + OCP 10.6: [[https://cs3110.github.io/textbook/chapters/interp/inference.html][Type Inference]]
+  + Optional:
+    + Samuel Beckett: [[https://www.youtube.com/watch?v=izX5dIzI2RE][Waiting for Godot]] (act II)
 + Topics:
+  + principal types
+  + generalization
 + Learning Objectives:
+  + Understand why we make the principal type of an expression the "most
+    general" type it can have
 ** 12-01 TUE (Lecture)
 + Week: 14
 + Title: Designing Rules
 + Reading:
+  + Required:
+  + Optional:
+    + Martin Esslin: [[https://www.jstor.org/stable/1124873?seq=1][The Theater of the Absurd]]
 + Topics:
 + Learning Objectives:
 ** 12-02 WED (Quiz 5)
++ Week: 14
 ** 12-03 THU (Lecture)
 + Week: 14
 + Title: A Case Study
 + Reading:
+  + Required:
+  + Optional:
+    + [[https://pubs.usgs.gov/publication/pp1348][The geologic history of the Moon]] 1: General Features
 + Topics:
 + Learning Objectives:
 ** 12-08 TUE (Lecture)
 + Week: 15
 + Title: Advanced Topic
 + Reading:
+  + Required:
+  + Optional:
+    + Juan Rulfo: [[https://shortstoryproject.com/stories/they-have-given-us-the-land/][They Have Given Us The Land]]
 + Topics:
 + Learning Objectives:
 ** 12-09 WED (Final Exam Review)
++ Week: 15
 ** 12-10 THU (Lecture)
 + Week: 15
 + Title: Advanced Topic
 + Reading:
+  + Required:
+  + Optional:
+    + Odilon Redon: [[https://www.ibiblio.org/wm/paint/auth/redon/redon.beatrice.jpg][Beatrice]]
 + Topics:
 + Learning Objectives:
 ** 12-17 THU (Final Exam)
++ Week: 16
++ Topics:
