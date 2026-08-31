@@ -87,9 +87,8 @@ language as an object of formal study.
 #+end_export
 * Course Staff
 + Instructors: [[https://ankushdas.github.io][Ankush Das]] and [[https://nmmull.github.io][Nathan Mull]]
-+ Teaching Fellow:
-+ Teaching Assistant:
-+ Course Assistants:
++ Teaching Fellow: Jared Pincus
++ Teaching Assistant: Vivian Tvedt
 
 /Do not contact course staff directly except in extenuating
 circumstances. If you have course-related questions/concerns, post on
