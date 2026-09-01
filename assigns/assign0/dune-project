@@ -1,0 +1,4 @@
+(lang dune 3.24)
+(name assign0)
+(generate_opam_files true)
+(package (name assign0) (depends ocaml stdlib320))
