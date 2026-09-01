@@ -65,13 +65,17 @@ ul {
 
 table {
     border-collapse: collapse;
-    max-width: 900px
+    max-width: 900px;
 }
 
 th, td {
     /* padding-right: 1.25em; */
     text-align: left;
     vertical-align: top;
+}
+
+tbody {
+    border: 1px solid black;
 }
 
 blockquote {
