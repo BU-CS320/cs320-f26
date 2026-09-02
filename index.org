@@ -15,6 +15,7 @@ language as an object of formal study.
 + [[https://nmmull.github.io/stdlib320/stdlib320/Stdlib320/index.html][Course Standard Library]]
 + [[https://piazza.com/bu/fall2026/cascs320/home][Piazza]]
 + [[https://www.gradescope.com/courses/1355920][Gradescope]] (Entry code: E632PP)
++ [[https://nmmull.github.io/ocaml-exercises/index.html][OCaml Exercises]]
 * Schedule (Compact)
 |-------+---------------------------------------------+------------------------------------------|
 | Date  | Topic                                       | Notes                                    |
