@@ -19,7 +19,7 @@ language as an object of formal study.
 |-------+---------------------------------------------+------------------------------------------|
 | Date  | Topic                                       | Notes                                    |
 |-------+---------------------------------------------+------------------------------------------|
-| [[*09-02 WED (Lab 0)][09-02]] | Lab 0: Installation Party                   | Read the course manual                   |
+| [[*09-02 WED (Lab 0)][09-02]] | Lab 0: [[file:labs/00/lab00.org][Installation Party]]                   | Read the course manual                   |
 | [[*09-03 THU (Lecture)][09-03]] | Introducing OCaml                           | A1 out                                   |
 |-------+---------------------------------------------+------------------------------------------|
 | [[*09-08 TUE (Lecture)][09-08]] | Recursion and Lists                         |                                          |
