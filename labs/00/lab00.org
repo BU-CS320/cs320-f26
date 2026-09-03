@@ -26,7 +26,7 @@ private mirror.
 ** Mirroring the Course Repository
 1. *Create a GitHub account* if you haven't already.  You can use your
    personal GitHub account if you have one.  /Note:/ Some students
-   have had issues setting using GitHub accounts with their BU email
+   have had issues using GitHub accounts with their BU email
    addresses, so I would generally recommend using a personal account.
 2. *Create a personal access token.* This collection of instructions
    assumes that you're using Git with HTTPS authentication.  If you
@@ -75,7 +75,10 @@ When materials are added to the course repository, you can easily
 merge them into your private repository. *You should get in the habit
 of doing this frequently.* You should ~cd~ to the directory for your
 private repository. Make sure to first commit any uncommitted changes.
-Then run the following commands.
+Then run the following commands.[fn::It's possible to put these
+commands into a bash script (e.g., something like ~refresh.sh~) to
+automate the process somewhat.  We'll leave up to you to decide if
+this is worth doing.]
 
 #+begin_src bash
   git fetch upstream
@@ -147,14 +150,23 @@ OCaml programs.
    under the assumption that you only have access to this library.
 4. *Install the packages for this course.* Run the following commands
    in the directory where your ~cs320-f26-private~ and ~stdlib320~
-   live.  You can ignore any warnings associated with installing the
-   course standard library.
+   live.
 
    #+begin_src bash
      opam update
-     opam install dune utop ounit2 menhir ocaml-lsp-server
+     opam install dune utop ounit2 menhir ocaml-lsp-server fmt
      opam install stdlib320/.
    #+end_src
+
+   When you run the last command you should see some warnings and then
+   the following prompt.
+
+   #+begin_src bash
+     Package stdlib320 does not exist, create as a NEW package? [y/n]
+   #+end_src
+
+   You should respond "yes" to this prompt (by typing ~y~).  You can
+   ignore the warnings.
 
 ** Setting up VSCode (Optional)
 If you plan on using VSCode, you should also install the [[https://marketplace.visualstudio.com/items?itemName=ocamllabs.ocaml-platform][OCaml
@@ -165,7 +177,9 @@ won't be a priority.
 
 * Assignment Workflow
 Once everything is set up, working on an assignment will go roughly as
-follows.
+follows (you should treat this section as a reference, Assignment 1
+will be released later this week; you test out the steps on
+Assignment 0 in the course repository).
 
 1. Sync with the course repository to get access to the assignment
    (see the instructions above).
@@ -205,7 +219,7 @@ assignment 1) looks something like this:
   │   ├── dune
   │   └── main.ml
   ├── dune-project
-  ├── hello_dune.opam
+  ├── assign1.opam
   ├── lib
   │   ├── dune
   │   └── assign1.ml
@@ -214,9 +228,9 @@ assignment 1) looks something like this:
       └── test_assign1.ml
 #+end_src
 
-The ~bin~ file contains the executable associated with the project
-~lib~ directory contains the source code, and the ~test~ directory
-contains the test suite.  There are a handful of dune commands that
+The ~bin~ directory contains the executable associated with the
+project, the ~lib~ directory contains the source code, and the ~test~
+directory contains the test suite.  There are a handful of dune commands that
 you will need to become familiar with.  You should run these in the
 root of the project.
 
@@ -224,8 +238,8 @@ root of the project.
 | ~dune build~        | Build the project                                                     |
 | ~dune exec assign1~ | Run the executable ~assign1~ of the project (as defined in ~main.ml~) |
 | ~dune utop~         | Open Utop in a way that is project aware                              |
-| ~dune test~         | Run the test suite of th project                                      |
-| ~dune clean~        | delete auxiliary files created during building                        |
+| ~dune test~         | Run the test suite of the project                                     |
+| ~dune clean~        | Delete auxiliary files created during building                        |
 |---------------------+-----------------------------------------------------------------------|
 
 * Utop
@@ -263,5 +277,5 @@ Then you should be able to refer to values you've defined in
 #+end_src
 
 ~Assign1~ is the name of the *module* defined by the file
-~lib/assign1.ml~ (module is like a namespace, it encasulates a
+~lib/assign1.ml~ (a module is like a namespace, it encapsulates a
 collection of functions, more on that later).

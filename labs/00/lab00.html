@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-08-24 Mon 13:32 -->
+<!-- 2026-08-31 Mon 18:12 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lab 0: Installation Party</title>
@@ -18,21 +18,21 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgfd818d6">1. Course Repository</a>
+<li><a href="#org8ea8ef2">1. Course Repository</a>
 <ul>
-<li><a href="#org789bdbc">1.1. Mirroring the Course Repository</a></li>
-<li><a href="#org4b2f333">1.2. Syncing with the Course Repository</a></li>
+<li><a href="#org7117901">1.1. Mirroring the Course Repository</a></li>
+<li><a href="#orgf97b57c">1.2. Syncing with the Course Repository</a></li>
 </ul>
 </li>
-<li><a href="#org07867e9">2. OCaml</a>
+<li><a href="#org775792e">2. OCaml</a>
 <ul>
-<li><a href="#orgfdd4eb2">2.1. Installing Packages</a></li>
-<li><a href="#org13c1264">2.2. Setting up VSCode (Optional)</a></li>
+<li><a href="#orga7af6de">2.1. Installing Packages</a></li>
+<li><a href="#orgf9034f4">2.2. Setting up VSCode (Optional)</a></li>
 </ul>
 </li>
-<li><a href="#orgee7b015">3. Assignment Workflow</a></li>
-<li><a href="#org607daec">4. Dune</a></li>
-<li><a href="#orga248da9">5. Utop</a></li>
+<li><a href="#org08203e3">3. Assignment Workflow</a></li>
+<li><a href="#org1ccce2d">4. Dune</a></li>
+<li><a href="#orgafd98c8">5. Utop</a></li>
 </ul>
 </div>
 </div>
@@ -49,8 +49,8 @@ up a WSL development environment</a>.  If you're a Windows superuser you
 can try a native install, but we (likely) won't help you troubleshoot.
 </p>
 </blockquote>
-<div id="outline-container-orgfd818d6" class="outline-2">
-<h2 id="orgfd818d6"><span class="section-number-2">1.</span> Course Repository</h2>
+<div id="outline-container-org8ea8ef2" class="outline-2">
+<h2 id="org8ea8ef2"><span class="section-number-2">1.</span> Course Repository</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 We host the <a href="https://github.com/BU-CS320/cs320-f26">course repository</a> on GitHub.  You'll need to host a
@@ -63,13 +63,13 @@ course repository, which you'll then be able to merge into your
 private mirror.
 </p>
 </div>
-<div id="outline-container-org789bdbc" class="outline-3">
-<h3 id="org789bdbc"><span class="section-number-3">1.1.</span> Mirroring the Course Repository</h3>
+<div id="outline-container-org7117901" class="outline-3">
+<h3 id="org7117901"><span class="section-number-3">1.1.</span> Mirroring the Course Repository</h3>
 <div class="outline-text-3" id="text-1-1">
 <ol class="org-ol">
 <li><b>Create a GitHub account</b> if you haven't already.  You can use your
 personal GitHub account if you have one.  <i>Note:</i> Some students
-have had issues setting using GitHub accounts with their BU email
+have had issues using GitHub accounts with their BU email
 addresses, so I would generally recommend using a personal account.</li>
 <li><b>Create a personal access token.</b> This collection of instructions
 assumes that you're using Git with HTTPS authentication.  If you
@@ -139,15 +139,15 @@ in which you'll put your solutions to assignments and projects.
 </p>
 </div>
 </div>
-<div id="outline-container-org4b2f333" class="outline-3">
-<h3 id="org4b2f333"><span class="section-number-3">1.2.</span> Syncing with the Course Repository</h3>
+<div id="outline-container-orgf97b57c" class="outline-3">
+<h3 id="orgf97b57c"><span class="section-number-3">1.2.</span> Syncing with the Course Repository</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 When materials are added to the course repository, you can easily
 merge them into your private repository. <b>You should get in the habit
 of doing this frequently.</b> You should <code>cd</code> to the directory for your
 private repository. Make sure to first commit any uncommitted changes.
-Then run the following commands.
+Then run the following commands.<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
 </p>
 
 <div class="org-src-container">
@@ -167,16 +167,16 @@ a refresher on how to do this.
 </div>
 </div>
 </div>
-<div id="outline-container-org07867e9" class="outline-2">
-<h2 id="org07867e9"><span class="section-number-2">2.</span> OCaml</h2>
+<div id="outline-container-org775792e" class="outline-2">
+<h2 id="org775792e"><span class="section-number-2">2.</span> OCaml</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Next you need to set up your machine to be able to compile and run
 OCaml programs.
 </p>
 </div>
-<div id="outline-container-orgfdd4eb2" class="outline-3">
-<h3 id="orgfdd4eb2"><span class="section-number-3">2.1.</span> Installing Packages</h3>
+<div id="outline-container-orga7af6de" class="outline-3">
+<h3 id="orga7af6de"><span class="section-number-3">2.1.</span> Installing Packages</h3>
 <div class="outline-text-3" id="text-2-1">
 <ol class="org-ol">
 <li><p>
@@ -251,21 +251,35 @@ under the assumption that you only have access to this library.
 <li><p>
 <b>Install the packages for this course.</b> Run the following commands
 in the directory where your <code>cs320-f26-private</code> and <code>stdlib320</code>
-live.  You can ignore any warnings associated with installing the
-course standard library.
+live.
 </p>
 
 <div class="org-src-container">
 <pre class="src src-bash">opam update
-opam install dune utop ounit2 menhir ocaml-lsp-server
+opam install dune utop ounit2 menhir ocaml-lsp-server fmt
 opam install stdlib320/.
 </pre>
-</div></li>
+</div>
+
+<p>
+When you run the last command you should see some warnings and then
+the following prompt.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">Package stdlib320 does not exist, create as a NEW package? [y/n]
+</pre>
+</div>
+
+<p>
+You should respond "yes" to this prompt (by typing <code>y</code>).  You can
+ignore the warnings.
+</p></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org13c1264" class="outline-3">
-<h3 id="org13c1264"><span class="section-number-3">2.2.</span> Setting up VSCode (Optional)</h3>
+<div id="outline-container-orgf9034f4" class="outline-3">
+<h3 id="orgf9034f4"><span class="section-number-3">2.2.</span> Setting up VSCode (Optional)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 If you plan on using VSCode, you should also install the <a href="https://marketplace.visualstudio.com/items?itemName=ocamllabs.ocaml-platform">OCaml
@@ -277,12 +291,14 @@ won't be a priority.
 </div>
 </div>
 </div>
-<div id="outline-container-orgee7b015" class="outline-2">
-<h2 id="orgee7b015"><span class="section-number-2">3.</span> Assignment Workflow</h2>
+<div id="outline-container-org08203e3" class="outline-2">
+<h2 id="org08203e3"><span class="section-number-2">3.</span> Assignment Workflow</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Once everything is set up, working on an assignment will go roughly as
-follows.
+follows (you should treat this section as a reference, Assignment 1
+will be released later this week; you test out the steps on
+Assignment 0 in the course repository).
 </p>
 
 <ol class="org-ol">
@@ -313,8 +329,8 @@ run.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org607daec" class="outline-2">
-<h2 id="org607daec"><span class="section-number-2">4.</span> Dune</h2>
+<div id="outline-container-org1ccce2d" class="outline-2">
+<h2 id="org1ccce2d"><span class="section-number-2">4.</span> Dune</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 <a href="https://dune.build">Dune</a> is a build tool for OCaml which we'll be using for the entirety
@@ -329,7 +345,7 @@ assignment 1) looks something like this:
 &#9474;&#160;&#160; &#9500;&#9472;&#9472; dune
 &#9474;&#160;&#160; &#9492;&#9472;&#9472; main.ml
 &#9500;&#9472;&#9472; dune-project
-&#9500;&#9472;&#9472; hello_dune.opam
+&#9500;&#9472;&#9472; assign1.opam
 &#9500;&#9472;&#9472; lib
 &#9474;&#160;&#160; &#9500;&#9472;&#9472; dune
 &#9474;&#160;&#160; &#9492;&#9472;&#9472; assign1.ml
@@ -340,9 +356,9 @@ assignment 1) looks something like this:
 </div>
 
 <p>
-The <code>bin</code> file contains the executable associated with the project
-<code>lib</code> directory contains the source code, and the <code>test</code> directory
-contains the test suite.  There are a handful of dune commands that
+The <code>bin</code> directory contains the executable associated with the
+project, the <code>lib</code> directory contains the source code, and the <code>test</code>
+directory contains the test suite.  There are a handful of dune commands that
 you will need to become familiar with.  You should run these in the
 root of the project.
 </p>
@@ -373,19 +389,19 @@ root of the project.
 
 <tr>
 <td class="org-left"><code>dune test</code></td>
-<td class="org-left">Run the test suite of th project</td>
+<td class="org-left">Run the test suite of the project</td>
 </tr>
 
 <tr>
 <td class="org-left"><code>dune clean</code></td>
-<td class="org-left">delete auxiliary files created during building</td>
+<td class="org-left">Delete auxiliary files created during building</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<div id="outline-container-orga248da9" class="outline-2">
-<h2 id="orga248da9"><span class="section-number-2">5.</span> Utop</h2>
+<div id="outline-container-orgafd98c8" class="outline-2">
+<h2 id="orgafd98c8"><span class="section-number-2">5.</span> Utop</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Utop is an interface for OCaml's toplevel, like Python's REPL.  It's a
@@ -435,11 +451,22 @@ _ : int = 4
 
 <p>
 <code>Assign1</code> is the name of the <b>module</b> defined by the file
-<code>lib/assign1.ml</code> (module is like a namespace, it encasulates a
+<code>lib/assign1.ml</code> (a module is like a namespace, it encapsulates a
 collection of functions, more on that later).
 </p>
 </div>
 </div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">It's possible to put these
+commands into a bash script (e.g., something like <code>refresh.sh</code>) to
+automate the process somewhat.  We'll leave up to you to decide if
+this is worth doing.</p></div></div>
+
+
 </div>
+</div></div>
 </body>
 </html>
