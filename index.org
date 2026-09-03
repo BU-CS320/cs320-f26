@@ -114,7 +114,8 @@ Piazza./
 + Reading:
   + Required:
     + [[file:course-manual.pdf][Course Manual]]
-    + Lecture Notes (LN) 1: Introduction
+    + [[file:lecture-notes-draft.pdf][Lecture Notes]] (LN) 1: Introduction
+    + LN 2.1: OCaml: Introduction
     + OCaml Programming (OP) 1: [[https://cs3110.github.io/textbook/chapters/intro/intro.html][Better Programming Through OCaml]]
     + OP 2: [[https://cs3110.github.io/textbook/chapters/basics/intro.html][The Basics of OCaml]]
   + Optional:
