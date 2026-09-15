@@ -1,0 +1,4 @@
+(lang dune 3.24)
+(name ws1)
+(generate_opam_files true)
+(package (name ws1) (depends ocaml))
