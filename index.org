@@ -27,13 +27,13 @@ language as an object of formal study.
 | [[*09-09 WED (Lab 1)][09-09]] | Lab 1: Practice, Practice, Practice         |                                          | ✓ |
 | [[*09-10 THU (Workshop)][09-10]] | Designing Functions (Workshop)              | A2 out, A1 due                           | ✓ |
 |-------+---------------------------------------------+------------------------------------------+---|
-| [[*09-15 TUE (Lecture)][09-15]] | Polymorphism                                |                                          |   |
-| [[*09-16 WED (Quiz 1)][09-16]] | Quiz 1                                      | Last day to add or change to audit       |   |
-| [[*09-17 THU (Lecture)][09-17]] | Products, Sums, Algebraic Data Types        | A3 out, A2 due                           |   |
+| [[*09-15 TUE (Lecture)][09-15]] | Polymorphism                                |                                          | ✓ |
+| [[*09-16 WED (Quiz 1)][09-16]] | Quiz 1                                      | Last day to add or change to audit       | ✓ |
+| [[*09-17 THU (Lecture)][09-17]] | Inference Rules                             | A3 out, A2 due                           | ✓ |
 |-------+---------------------------------------------+------------------------------------------+---|
-| [[*09-22 TUE (Lecture)][09-22]] | Inference Rules                             |                                          |   |
+| [[*09-22 TUE (Lecture)][09-22]] | Derivations                                 |                                          |   |
 | [[*09-23 WED (Lab 2)][09-23]] | Lab 2: Calculator                           |                                          |   |
-| [[*09-24 THU (Lecture)][09-24]] | Derivations                                 | A4 out, A3 due                           |   |
+| [[*09-24 THU (Lecture)][09-24]] | Products, Sums, Algebraic Data Types        | A4 out, A3 due                           |   |
 |-------+---------------------------------------------+------------------------------------------+---|
 | [[*09-29 TUE (Lecture)][09-29]] | Higher-Order Programming                    |                                          |   |
 | [[*09-30 WED (Quiz 2)][09-30]] | Quiz 2                                      |                                          |   |
@@ -193,9 +193,51 @@ Piazza./
     reading it)
 ** 09-16 WED (Quiz 1)
 + Week: 3
-+ Topics:
++ Topic: Basic OCaml programming
 ** 09-17 THU (Lecture)
 + Week: 3
++ Title: Inference Rules
++ Reading:
+  + Required:
+    + LN 2.1: Inference Rules
+  + Optional:
+    + Rebecca Burditt: [[https://online.ucpress.edu/gastronomica/article/26/1/73/216809/Sweet-RuinCakes-and-the-Visual-Culture-of-Anxiety][Sweet Ruin: Cakes and the Visual Culture of Anxiety, 1945–1960]]
++ Topics:
+  + inference systems
+  + typing and semantic judgments
+  + variable declarations and contexts
++ Learning Objectives:
+  + Learn to read and write typing/semantic judgments
+  + See how inference rules can help us formally specify programming
+    languages
++ Notes:
+  + assignment 3 released
+  + assignment 2 due
+** 09-22 TUE (Lecture)
++ Week: 4
++ Title: Derivations
++ Reading:
+  + Required:
+    + LN 2.2: Derivations
+    + LN 2.3: Extended Example: RPN Calculator
+  + Optional:
+    + Graham Priest: [[https://grahampriest.net/publications/papers/#1979][A Note on the Sorites Paradox]]
++ Topics:
+  + metavariables in inference rules
+  + constructing derivations
++ Learning Objectives:
+  + Learn to build a derivation of a judgment within an inference
+    system (and also understand what this establishes)
+  + Learn to translate formal derivation trees into English proof, and
+    vice versa
+  + Work through a number of examples
+** 09-23 WED (Lab 2)
++ Week: 4
++ Title: Calculator
++ Topics:
++ Learning Objectives:
+** 09-24 THU (Lecture)
++ Week: 4
 + Title: Products, Sums, Algebraic Data Types
 + Reading:
   + Required:
@@ -205,7 +247,7 @@ Piazza./
     + OP 3.11: [[https://cs3110.github.io/textbook/chapters/data/trees.html][Example: Trees]]
     + OP 3.12: [[https://cs3110.github.io/textbook/chapters/data/nats.html][Example: Natural Numbers]]
   + Optional:
-    + Rebecca Burditt: [[https://online.ucpress.edu/gastronomica/article/26/1/73/216809/Sweet-RuinCakes-and-the-Visual-Culture-of-Anxiety][Sweet Ruin: Cakes and the Visual Culture of Anxiety, 1945–1960]]
+    + John Berryman: [[https://www.poetryfoundation.org/poems/47534/dream-song-14][Dream Song 14]]
 + Topics:
   + tuples and records
   + algebraic data types
@@ -216,48 +258,6 @@ Piazza./
   + See how to organize data for a given programming task
   + Learn to use pattern matching to design basic recursive functions
   + Start thinking about data-driven programming
-+ Notes:
-  + assignment 3 released
-  + assignment 2 due
-** 09-22 TUE (Lecture)
-+ Week: 4
-+ Title: Inference Rules
-+ Reading:
-  + Required:
-    + LN 2.1: Inference Rules
-  + Optional:
-    + Graham Priest: [[https://grahampriest.net/publications/papers/#1979][A Note on the Sorites Paradox]]
-+ Topics:
-  + inference systems
-  + typing and semantic judgments
-  + variable declarations and contexts
-+ Learning Objectives:
-  + Learn to read and write typing/semantic judgments
-  + See how inference rules can help us formally specify programming
-    languages
-** 09-23 WED (Lab 2)
-+ Week: 4
-+ Title: Calculator
-+ Topics:
-+ Learning Objectives:
-** 09-24 THU (Lecture)
-+ Week: 4
-+ Title: Derivations
-+ Reading:
-  + Required:
-    + LN 2.2: Derivations
-    + LN 2.3: Extended Example: RPN Calculator
-  + Optional:
-    + John Berryman: [[https://www.poetryfoundation.org/poems/47534/dream-song-14][Dream Song 14]]
-+ Topics:
-  + metavariables in inference rules
-  + constructing derivations
-+ Learning Objectives:
-  + Learn to build a derivation of a judgment within an inference
-    system (and also understand what this establishes)
-  + Learn to translate formal derivation trees into English proof, and
-    vice versa
-  + Work through a number of examples
 + Notes:
   + assignment 4 released
   + assignment 3 due
