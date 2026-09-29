@@ -31,9 +31,9 @@ language as an object of formal study.
 | [[*09-16 WED (Quiz 1)][09-16]] | Quiz 1                                      | Last day to add or change to audit       | ✓ |
 | [[*09-17 THU (Lecture)][09-17]] | Inference Rules                             | A3 out, A2 due                           | ✓ |
 |-------+---------------------------------------------+------------------------------------------+---|
-| [[*09-22 TUE (Lecture)][09-22]] | Derivations                                 |                                          |   |
-| [[*09-23 WED (Lab 2)][09-23]] | Lab 2: Calculator                           |                                          |   |
-| [[*09-24 THU (Lecture)][09-24]] | Products, Sums, Algebraic Data Types        | A4 out, A3 due                           |   |
+| [[*09-22 TUE (Lecture)][09-22]] | Derivations                                 |                                          | ✓ |
+| [[*09-23 WED (Lab 2)][09-23]] | Lab 2: Calculator                           |                                          | ✓ |
+| [[*09-24 THU (Lecture)][09-24]] | Products, Sums, Algebraic Data Types        | A4 out, A3 due                           | ✓ |
 |-------+---------------------------------------------+------------------------------------------+---|
 | [[*09-29 TUE (Lecture)][09-29]] | Higher-Order Programming                    |                                          |   |
 | [[*09-30 WED (Quiz 2)][09-30]] | Quiz 2                                      |                                          |   |
