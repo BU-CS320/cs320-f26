@@ -35,7 +35,7 @@ language as an object of formal study.
 | [[*09-23 WED (Lab 2)][09-23]] | Lab 2: Calculator                           |                                          | ✓ |
 | [[*09-24 THU (Lecture)][09-24]] | Products, Sums, Algebraic Data Types        | A4 out, A3 due                           | ✓ |
 |-------+---------------------------------------------+------------------------------------------+---|
-| [[*09-29 TUE (Lecture)][09-29]] | Higher-Order Programming                    |                                          |   |
+| [[*09-29 TUE (Lecture)][09-29]] | Higher-Order Programming                    |                                          | ✓ |
 | [[*09-30 WED (Quiz 2)][09-30]] | Quiz 2                                      |                                          |   |
 | [[*10-01 THU (Workshop)][10-01]] | Practical Functional Programming (Workshop) | A5 out, A4 due                           |   |
 |-------+---------------------------------------------+------------------------------------------+---|
