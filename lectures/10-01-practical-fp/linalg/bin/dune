@@ -1,0 +1,4 @@
+(executable
+ (public_name linalg)
+ (name main)
+ (libraries linalg))
