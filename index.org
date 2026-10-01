@@ -37,7 +37,7 @@ language as an object of formal study.
 |-------+--------------------------------------+------------------------------------------+---|
 | [[*09-29 TUE (Lecture)][09-29]] | Higher-Order Programming             |                                          | ✓ |
 | [[*09-30 WED (Quiz 2)][09-30]] | Quiz 2                               |                                          | ✓ |
-| [[*10-01 THU (Workshop)][10-01]] | Practical FP (Workshop)              | A5 out, A4 due                           |   |
+| [[*10-01 THU (Workshop)][10-01]] | Practical FP (Workshop)              | A5 out, A4 due                           | ✓ |
 |-------+--------------------------------------+------------------------------------------+---|
 | [[*10-06 TUE (Lecture)][10-06]] | Formal Grammar                       |                                          |   |
 | [[*10-07 WED (Lab 3)][10-07]] | Lab 3: Writing Tests                 | Last day to drop without a "W"           |   |
