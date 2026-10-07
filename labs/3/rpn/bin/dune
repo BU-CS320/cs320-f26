@@ -1,0 +1,4 @@
+(executable
+ (public_name rpn)
+ (name main)
+ (libraries rpn))

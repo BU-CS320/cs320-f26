@@ -1,0 +1,4 @@
+(lang dune 3.24)
+(name linalg)
+(generate_opam_files true)
+(package (name linalg) (depends ocaml ounit2))
