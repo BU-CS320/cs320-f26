@@ -41,7 +41,7 @@ language as an object of formal study.
 |-------+--------------------------------------+------------------------------------------+---|
 | [[*10-06 TUE (Lecture)][10-06]] | Formal Grammar                       |                                          | ✓ |
 | [[*10-07 WED (Lab 3)][10-07]] | Lab 3: Writing Tests                 | Last day to drop without a "W"           | ✓ |
-| [[*10-08 THU (Lecture)][10-08]] | Basic Parsing                        | A5 due                                   |   |
+| [[*10-08 THU (Lecture)][10-08]] | Basic Parsing                        | A5 due, [[file:midterm/midterm-prep.org][Midterm prep material]]            | ✓ |
 |-------+--------------------------------------+------------------------------------------+---|
 | 10-13 | *No Lecture*                         | Substitute Monday                        |   |
 | [[*10-14 WED (Midterm Review)][10-14]] | Midterm Review                       |                                          |   |
@@ -345,6 +345,7 @@ Piazza./
     the remainder of the semester
 + Notes:
   + assignment 5 due
+  + [[file:midterm/midterm-prep.org][Midterm prep material]] released
 ** 10-14 WED (Midterm Review)
 + Week: 7
 ** 10-15 THU (Midterm 1)

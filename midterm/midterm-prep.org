@@ -1,0 +1,86 @@
+#+title: Midterm Exam Prep Material
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../style.css" />
+#+OPTIONS: html-style:nil H:2 toc:nil num:nil
+#+HTML_LINK_HOME: ../index.html
+
+The following is a collection of things you should be comfortable
+with going into the midterm.  It's not exhaustive, and I can pretty
+much guarantee that no question on the midterm will be a direct
+restatement of anything below, but if you understand everything in
+this document, you have the foundations to approach any question on
+the midterm.
+
+We also include some exams that were previously given for this course.
+You'll notice that some of the problems have already appeared as
+homework assignments, and that some practice exams have shared
+problems.  The primary value of the exams is to give you a sense of
+how the exam will be structured, and what you should expect both in
+terms of difficulty and length.
+
+* Practice Exams
+
++ [[file:practice-exam-1.pdf][Practice exam (1)]]
++ [[file:practice-exam-2.pdf][Practice exam (2)]]
++ [[file:practice-exam-3.pdf][Practice exam (3)]]
++ [[file:practice-exam-4.pdf][Practice exam (4)]]
+
+* Midterm Topics
+
++ OCaml
+  + Basics
+    + Literals and operators
+    + Basic types
+    + If-expressions
+    + Let-expressions
+    + Functions
+    + Applications
+    + Match-expressions
+    + Recursion
+      + Tail recursion
+      + Mutual recursion
+  + Algebraic data types
+    + Common ADTs
+      + Lists
+        + Association lists
+      + Options and results (error handling)
+      + Binary trees and rose trees
+    + Pattern matching
+      + Deep pattern matching
+  + Records and tuples
+  + Parametric polymorphism
+    + type parameters
+  + Higher-order programming
+    + Maps, filter, folds
+    + Currying
++ Inference systems
+  + Metavariables
+  + Inference rules
+  + Derivations
++ Typing
+  + Contexts
+  + Typing judgments
++ Semantics
+  + Values
+  + Semantic judgments
+  + Substitution
++ 320Caml (Understand, not memorize)
+* General Skills
++ Write basic OCaml functions
+  + Implement functions tail-recursively
+  + Implement functions using particular higher-order functions
++ Reason about OCaml program
+  + Determine the type of an OCaml expression
+  + Determine the value of an OCaml expression
+  + Determine the ADT given its use in a program
+  + Determine an expression for a polymorphic type
++ Inference Systems
+  + Determine the meaning of an inference rule
+  + Write the inference rule based on a description of it
+  + Write a derivation of a judgment given the inference rules
++ Typing
+  + Determine the minimal context so that an expression is typable
+  + Determine the type of an expression given the inference rules
+  + Write a typing derivation of a typing judgment given the inference rules
++ Semantics
+  + Determine the value of an expression given the semantic rules
+  + Write a semantic derivation of a semantic judgment given the inference rules
