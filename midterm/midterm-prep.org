@@ -64,7 +64,9 @@ terms of difficulty and length.
   + Semantic judgments
   + Substitution
 + 320Caml (Understand, not memorize)
+
 * General Skills
+
 + Write basic OCaml functions
   + Implement functions tail-recursively
   + Implement functions using particular higher-order functions
