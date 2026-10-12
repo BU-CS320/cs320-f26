@@ -43,7 +43,7 @@ language as an object of formal study.
 | [[*10-07 WED (Lab 3)][10-07]] | Lab 3: Writing Tests                 | Last day to drop without a "W"           | ✓ |
 | [[*10-08 THU (Lecture)][10-08]] | Basic Parsing                        | A5 due, [[file:midterm/midterm-prep.org][Midterm prep material]]            | ✓ |
 |-------+--------------------------------------+------------------------------------------+---|
-| 10-13 | *No Lecture*                         | Substitute Monday                        |   |
+| 10-13 | *No Lecture*                         | Substitute Monday                        | ✓ |
 | [[*10-14 WED (Midterm Review)][10-14]] | Midterm Review                       |                                          |   |
 | [[*10-15 THU (Midterm 1)][10-15]] | *Midterm 1*                          | A6 out                                   |   |
 |-------+--------------------------------------+------------------------------------------+---|
