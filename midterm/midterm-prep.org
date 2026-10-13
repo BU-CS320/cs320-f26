@@ -19,10 +19,10 @@ terms of difficulty and length.
 
 * Practice Exams
 
-+ [[file:practice-exam-1.pdf][Practice exam (1)]]
-+ [[file:practice-exam-2.pdf][Practice exam (2)]]
-+ [[file:practice-exam-3.pdf][Practice exam (3)]]
-+ [[file:practice-exam-4.pdf][Practice exam (4)]]
++ [[file:practice-exam-1.pdf][Practice exam (1)]] [[file:practice-exam-1-sol.pdf][solutions]]
++ [[file:practice-exam-2.pdf][Practice exam (2)]] [[file:practice-exam-2-sol.pdf][solutions]]
++ [[file:practice-exam-3.pdf][Practice exam (3)]] [[file:practice-exam-3-sol.pdf][solutions]]
++ [[file:practice-exam-4.pdf][Practice exam (4)]] [[file:practice-exam-4-sol.pdf][solutions]]
 
 * Midterm Topics
 
