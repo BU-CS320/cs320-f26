@@ -1,0 +1,3 @@
+(library
+ (name lab4)
+ (public_name lab4))

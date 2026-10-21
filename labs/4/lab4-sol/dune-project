@@ -1,0 +1,3 @@
+(lang dune 3.24)
+(name lab4)
+(package (name lab4) (depends ocaml))
