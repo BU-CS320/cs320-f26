@@ -1,0 +1,3 @@
+(library
+ (name assign7)
+ (public_name assign7))
