@@ -47,13 +47,13 @@ language as an object of formal study.
 | [[*10-14 WED (Midterm Review)][10-14]] | Midterm Review                       |                                          | ✓ |
 | [[*10-15 THU (Midterm 1)][10-15]] | *Midterm 1*                          | A6 out                                   | ✓ |
 |-------+--------------------------------------+------------------------------------------+---|
-| [[*10-20 TUE (Lecture)][10-20]] | Operational Semantics                |                                          |   |
-| [[*10-21 WED (Lab 4)][10-21]] | Lab 4: S-Expressions                 |                                          |   |
-| [[*10-22 THU (Lecture)][10-22]] | Substitution (Workshop)              | A7 out, A6 due                           |   |
+| [[*10-20 TUE (Lecture)][10-20]] | Operational Semantics                |                                          | ✓ |
+| [[*10-21 WED (Lab 4)][10-21]] | Lab 4: S-Expressions                 |                                          | ✓ |
+| [[*10-22 THU (Lecture)][10-22]] | Substitution                         | A7 out, A6 due                           | ✓ |
 |-------+--------------------------------------+------------------------------------------+---|
-| [[*10-27 TUE (Lecture)][10-27]] | Simple Types                         |                                          |   |
+| [[*10-27 TUE (Lecture)][10-27]] | Evaluation Strategies (Workshop)     |                                          | ✓ |
 | [[*10-28 WED (Quiz 3)][10-28]] | Quiz 3                               |                                          |   |
-| [[*10-29 THU (Lecture)][10-29]] | Progress and Preservation            | A8 out, A7 due                           |   |
+| [[*10-29 THU (Lecture)][10-29]] | Simple Types                         | A8 out, A7 due                           |   |
 |-------+--------------------------------------+------------------------------------------+---|
 | [[*11-03 TUE (Lecture)][11-03]] | Environment-based Semantics          |                                          |   |
 | [[*11-04 WED (Quiz 4)][11-04]] | Quiz 4                               |                                          |   |
