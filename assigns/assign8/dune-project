@@ -1,0 +1,3 @@
+(lang dune 3.24)
+(name assign8)
+(package (name assign8) (depends ocaml ounit2))

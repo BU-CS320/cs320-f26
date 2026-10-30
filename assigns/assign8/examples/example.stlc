@@ -1,0 +1,6 @@
+(let add
+  (lambda m Nat
+    (lambda n Nat
+      (let step (lambda p Nat (lambda x Nat (add1 x)))
+      (rec-Nat m n step))))
+((add 15) 27))
