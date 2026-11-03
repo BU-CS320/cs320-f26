@@ -47,17 +47,17 @@ language as an object of formal study.
 | [[*10-14 WED (Midterm Review)][10-14]] | Midterm Review                       |                                          | ✓ |
 | [[*10-15 THU (Midterm 1)][10-15]] | *Midterm 1*                          | A6 out                                   | ✓ |
 |-------+--------------------------------------+------------------------------------------+---|
-| [[*10-20 TUE (Lecture)][10-20]] | Operational Semantics                |                                          | ✓ |
+| [[*10-20 TUE (Lecture)][10-20]] | [[file:lectures/10-20-formal-semantics/formal-semantics-notes.pdf][Operational Semantics]]                |                                          | ✓ |
 | [[*10-21 WED (Lab 4)][10-21]] | Lab 4: S-Expressions                 |                                          | ✓ |
-| [[*10-22 THU (Lecture)][10-22]] | Substitution                         | A7 out, A6 due                           | ✓ |
+| [[*10-22 THU (Lecture)][10-22]] | [[file:lectures/10-22-substitution/lambda-calculus-notes.pdf][Substitution]]                         | A7 out, A6 due                           | ✓ |
 |-------+--------------------------------------+------------------------------------------+---|
-| [[*10-27 TUE (Lecture)][10-27]] | Evaluation Strategies (Workshop)     |                                          | ✓ |
+| [[*10-27 TUE (Workshop)][10-27]] | Evaluation Strategies (Workshop)     |                                          | ✓ |
 | [[*10-28 WED (Quiz 3)][10-28]] | Quiz 3                               |                                          | ✓ |
-| [[*10-29 THU (Lecture)][10-29]] | Simple Types                         | A8 out, A7 due                           | ✓ |
+| [[*10-29 THU (Lecture)][10-29]] | [[file:lectures/10-29-stlc/stlc-notes.pdf][Simple Types]]                         | A8 out, A7 due                           | ✓ |
 |-------+--------------------------------------+------------------------------------------+---|
-| [[*11-03 TUE (Lecture)][11-03]] | Environment-based Semantics          |                                          |   |
+| [[*11-03 TUE (Lecture)][11-03]] | [[file:lectures/11-03-prog-pres/prog-pres-notes.pdf][Progress and Preservation]]            |                                          |   |
 | [[*11-04 WED (Quiz 4)][11-04]] | Quiz 4                               |                                          |   |
-| [[*11-05 THU (Lecture)][11-05]] | Closures                             | A8 due                                   |   |
+| [[*11-05 THU (Lecture)][11-05]] | Environment Semanticss               | A8 due                                   |   |
 | 11-06 |                                      | Last day to drop w/ "W" or designate P/F |   |
 |-------+--------------------------------------+------------------------------------------+---|
 | [[*11-10 TUE (Lecture)][11-10]] | Pattern Matching                     |                                          |   |
@@ -348,16 +348,20 @@ Piazza./
   + [[file:midterm/midterm-prep.org][Midterm prep material]] released
 ** 10-14 WED (Midterm Review)
 + Week: 7
++ Topics:
+  + See [[file:midterm/midterm-prep.org][Midterm prep material]]
 ** 10-15 THU (Midterm 1)
 + Week: 7
 + Topics:
+  + See [[file:midterm/midterm-prep.org][Midterm prep material]]
 + Notes:
-  + assignment 6 released
+  + Assignment 6 released
 ** 10-20 TUE (Lecture)
 + Week: 8
 + Title: Operational Semantics
 + Reading:
   + Required:
+    + [[file:lectures/10-20-formal-semantics/formal-semantics-notes.pdf][Formal Semantics]]
   + Optional:
     + Mary Shelley: [[https://www.gutenberg.org/ebooks/84][Frankenstein; or, the Modern Prometheus]] (ch. 11-15)
 + Topics:
@@ -370,6 +374,9 @@ Piazza./
     semantics
   + Learn how formal semantics corresponds with evaluation in an
     interpreter
++ Notes:
+  + assignment 7 released
+  + assignment 6 due
 ** 10-21 WED (Lab 4)
 + Week: 8
 + Title: S-Expressions
@@ -382,28 +389,46 @@ Piazza./
 + Reading:
   + Required:
     + OP 10.3: [[https://cs3110.github.io/textbook/chapters/interp/substitution.html][Substitution Model]]
+    + [[file:lectures/10-22-substitution/lambda-calculus-notes.pdf][\lambda-Calculus]]
   + Optional:
     + Mary Shelley: [[https://www.gutenberg.org/ebooks/84][Frankenstein; or, the Modern Prometheus]] (ch. 16-20)
 + Topics:
   + λ-calculus
-  + call-by-name vs. call-by-value
   + capture-avoiding substitution
 + Learning Objectives:
   + Discuss in detail substitution semantics for the (untyped)
     λ-calculus
   + Understand the benefits and downsides to CBN and CBV evaluation
     strategies
-+ Notes:
-  + assignment 7 released
-  + assignment 6 due
-** 10-27 TUE (Lecture)
+** 10-27 TUE (Workshop)
++ Week: 9
++ Title: Evaluation Strategies
++ Reading:
+  + Required:
+    + OP 10.3: [[https://cs3110.github.io/textbook/chapters/interp/substitution.html][Substitution Model]]
+    + [[file:lectures/10-22-substitution/lambda-calculus-notes.pdf][\lambda-Calculus]]
+  + Optional:
+    + Mary Shelley: [[https://www.gutenberg.org/ebooks/84][Frankenstein; or, the Modern Prometheus]] (ch. 21-24)
++ Topics:
+  + call-by-name vs. call-by-value
++ Learning Objectives:
+  + Understand the benefits and downsides to CBN and CBV evaluation
+    strategies
+** 10-28 WED (Quiz 3)
++ Week: 9
++ Topics:
+  + Higher-order functions
+  + Formal grammar
+  + Grammatical ambiguity
+** 10-29 THU (Lecture)
 + Week: 9
 + Title: Simple Types
 + Reading:
   + Required:
     + OCP 10.5: [[https://cs3110.github.io/textbook/chapters/interp/typecheck.html][Type Checking]]
+    + [[file:lectures/10-29-stlc/stlc-notes.pdf][Simple Types]]
   + Optional:
-    + Mary Shelley: [[https://www.gutenberg.org/ebooks/84][Frankenstein; or, the Modern Prometheus]] (ch. 21-24)
+    + Adriana Craciun: [[https://online.ucpress.edu/ncl/article/65/4/433/66637/Writing-the-Disaster-Franklin-and-Frankenstein][Writing the Disaster: Franklin and Frankenstein]]
 + Topics:
   + simply typed lambda calculus
   + type uniqueness
@@ -412,56 +437,48 @@ Piazza./
   + Discuss the trade-offs of typed vs. untyped PLs
   + Introduce the notation of type safety
   + See more typing derivation examples
-** 10-28 WED (Quiz 3)
-+ Week: 9
-+ Topics:
-** 10-29 THU (Lecture)
-+ Week: 9
-+ Title: Progress and Preservation
-+ Reading:
-  + Required:
-    + LN A: Trees
-  + Optional:
-    + Adriana Craciun: [[https://online.ucpress.edu/ncl/article/65/4/433/66637/Writing-the-Disaster-Franklin-and-Frankenstein][Writing the Disaster: Franklin and Frankenstein]]
-+ Topics:
-  + structural induction
-  + induction over derivations
-  + substitution lemma
-+ Learning Objectives:
-  + Learn how to prove things about PLs
-  + Demonstrate the type safety of STLC
 + Notes:
   + assignment 8 released
   + assignment 7 due
 ** 11-03 TUE (Lecture)
 + Week: 10
-+ Title: Environment-based Semantics
++ Title: Progress and Preservation
 + Reading:
   + Required:
-    + OCP 10.4: [[https://cs3110.github.io/textbook/chapters/interp/environment.html][Environment Model]]
+    + LN A: Trees
+    + [[file:lectures/11-03-prog-pres/prog-pres-notes.pdf][Progress and Preservation]]
   + Optional:
     + Edwin Abbott Abbott: [[https://www.gutenberg.org/ebooks/45506][Flatland: A Romance of Many Dimensions]] (§1-7)
 + Topics:
-  + lexical vs. dynamic scoping
-  + environments and closures
+  + structural induction
+  + induction over derivations
+  + substitution lemma
+  + Progress and preservation
 + Learning Objectives:
-  + See how to make our interpreter implementations more efficient by
-    avoiding unnecessary substitutions and storing bindings in an
-    environment
+  + Learn how to prove things about PLs
+  + Demonstrate the type safety of STLC
 ** 11-04 WED (Quiz 4)
 + Week: 10
 + Topics:
+  + Capture-avoiding substitution
+  + \lambda-calculus
+  + evaluation strategies (CBV vs. CBN)
 ** 11-05 THU (Lecture)
 + Week: 10
-+ Title: Closures
++ Title: Environment Semantics
 + Reading:
   + Required:
     + OCP 10.4: [[https://cs3110.github.io/textbook/chapters/interp/environment.html][Environment Model]]
   + Optional:
     + Edwin Abbott Abbott: [[https://www.gutenberg.org/ebooks/45506][Flatland: A Romance of Many Dimensions]] (§8-14)
 + Topics:
+  + lexical vs. dynamic scoping
+  + environments and closures
   + named closures and recursion
 + Learning Objectives:
+  + See how to make our interpreter implementations more efficient by
+    avoiding unnecessary substitutions and storing bindings in an
+    environment
   + Discuss how to deal with recursion when working with closures
 + Notes:
   + assignment 8 due
