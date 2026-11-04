@@ -1,0 +1,53 @@
+#+title: Midterm Exam 2 Prep Material
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../style.css" />
+#+OPTIONS: html-style:nil H:2 toc:nil num:nil
+#+HTML_LINK_HOME: ../index.html
+
+* Practice Exams
+
++ [[file:practice-exam-1.pdf][Practice exam (1)]]
++ [[file:practice-exam-2.pdf][Practice exam (2)]]
+
+* Topics
+
++ everything from the [[https://bu-cs320.github.io/cs320-f26/midterm/midterm-prep.html][Midterm 1 topics list]]
++ Higher-order programming
+  + anonymous functions
+  + functions as arguments
+  + map, filter, fold
+  + the abstraction principle
++ formal grammar
+  + parse trees
+  + precedence
+  + associativity
+  + grammatical ambiguity
+  + S-expressions
+  + concrete vs. abstract syntax
++ formal semantics
+  + small-step semantics
+  + multi-step semantics
+  + big-step semantics
+  + semantic judgments
+  + semantic derivations
+  + traces
+  + deterministic vs. non-deterministic semantics
++ \lambda-calculus
+  + \beta-reduction
+  + capture-avoiding substitution
+  + \alpha-equivalence
+  + free & bound variables
+  + normalization vs. non-normalization
++ Evaluation strategies
+  + parameter passing
+  + small-step CBV semantics
+  + big-step CBV semantics
+  + small-step CBN semantics
+  + big-step CBN semantics
+  + benefits and downsides to CBV and CBN
++ STLC
+  + typing judgments
+    + contexts
+  + typing derivations
+  + basic properties of STLC
+    + type uniqueness
+    + well-scopedness

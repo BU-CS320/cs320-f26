@@ -19,7 +19,7 @@ type expr =
 
 type ctxt = (string * ty) list
 
-let type_of (gamma : ctxt) (e : expr) : ty option =
+let rec type_of (gamma : ctxt) (e : expr) : ty option =
   match e with
     (*
        (x : τ) ∈ Γ
@@ -27,8 +27,33 @@ let type_of (gamma : ctxt) (e : expr) : ty option =
         Γ ⊢ x : τ
      *)
   | Var x -> List.assoc_opt x gamma
-  | Lam (x, t, e) -> assert false
-  | App (e1, e2) -> assert false
+  (*
+         Γ, x : τ₁ ⊢ e : τ₂
+    ─────────────────────────────(fun)
+    Γ ⊢ λ (x : τ₁) . e : τ₁ → τ₂
+   *)
+  | Lam (x, t1, e) ->
+     begin
+       match type_of ((x, t1) :: gamma) e with
+       | Some t2 -> Some (Arr (t1, t2))
+       | None -> None
+     end
+  (*
+    Γ ⊢ e₁ : τ₂ → τ    Γ ⊢ e₂ : τ₂
+    ──────────────────────────────(app)
+             Γ ⊢ e₁ e₂ : τ
+   *)
+  | App (e1, e2) ->
+     begin
+       match type_of gamma e1 with
+       | Some (Arr (t2, t)) ->
+          begin
+            match type_of gamma e2 with
+            | Some t2' when t2 = t2' -> Some t
+            | _ -> None
+          end
+       | _ -> None
+     end
 
 (* Semantics *)
 
@@ -78,3 +103,8 @@ let rec eval (e : expr) : expr =
         let v = eval (subst v2 x e) in
         v
      | _ -> raise (Failure "expected function")
+
+let interp e =
+  match type_of [] e with
+  | Some _ -> eval e
+  | None -> raise (Failure "whoops")

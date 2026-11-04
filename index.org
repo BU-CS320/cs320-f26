@@ -55,9 +55,9 @@ language as an object of formal study.
 | [[*10-28 WED (Quiz 3)][10-28]] | Quiz 3                               |                                          | ✓ |
 | [[*10-29 THU (Lecture)][10-29]] | [[file:lectures/10-29-stlc/stlc-notes.pdf][Simple Types]]                         | A8 out, A7 due                           | ✓ |
 |-------+--------------------------------------+------------------------------------------+---|
-| [[*11-03 TUE (Lecture)][11-03]] | [[file:lectures/11-03-prog-pres/prog-pres-notes.pdf][Progress and Preservation]]            |                                          |   |
-| [[*11-04 WED (Quiz 4)][11-04]] | Quiz 4                               |                                          |   |
-| [[*11-05 THU (Lecture)][11-05]] | Environment Semanticss               | A8 due                                   |   |
+| [[*11-03 TUE (Lecture)][11-03]] | [[file:lectures/11-03-prog-pres/prog-pres-notes.pdf][Progress and Preservation]]            |                                          | ✓ |
+| [[*11-04 WED (Quiz 4)][11-04]] | Quiz 4                               |                                          | ✓ |
+| [[*11-05 THU (Lecture)][11-05]] | Environment Semantics                | A8 due, [[file:midterm-2/midterm-prep.org][Midterm 2 prep material]]          |   |
 | 11-06 |                                      | Last day to drop w/ "W" or designate P/F |   |
 |-------+--------------------------------------+------------------------------------------+---|
 | [[*11-10 TUE (Lecture)][11-10]] | Pattern Matching                     |                                          |   |
@@ -482,6 +482,7 @@ Piazza./
   + Discuss how to deal with recursion when working with closures
 + Notes:
   + assignment 8 due
+  + [[file:midterm-2/midterm-prep.org][Midterm 2 prep material]] released
 ** 11-10 TUE (Lecture)
 + Week: 11
 + Title: Pattern Matching
@@ -496,10 +497,10 @@ Piazza./
   + Formally describe how pattern matching works
 ** 11-11 WED (Midterm Review)
 + Week: 11
-+ Topics:
++ Topics: [[file:midterm-2/midterm-prep.org][Midterm 2 prep material]]
 ** 11-12 THU (Midterm 2)
 + Week: 11
-+ Topics:
++ Topics: [[file:midterm-2/midterm-prep.org][Midterm 2 prep material]]
 + Notes:
   + assignment 9 released
 ** 11-17 TUE (Lecture)
