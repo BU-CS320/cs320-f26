@@ -57,7 +57,7 @@ language as an object of formal study.
 |-------+--------------------------------------+------------------------------------------+---|
 | [[*11-03 TUE (Lecture)][11-03]] | [[file:lectures/11-03-prog-pres/prog-pres-notes.pdf][Progress and Preservation]]            |                                          | ✓ |
 | [[*11-04 WED (Quiz 4)][11-04]] | Quiz 4                               |                                          | ✓ |
-| [[*11-05 THU (Lecture)][11-05]] | Environment Semantics                | A8 due, [[file:midterm-2/midterm-prep.org][Midterm 2 prep material]]          |   |
+| [[*11-05 THU (Lecture)][11-05]] | [[file:lectures/11-05-env-model/env-sem-notes.pdf][Environment Semantics]]                | A8 due, [[file:midterm-2/midterm-prep.org][Midterm 2 prep material]]          |   |
 | 11-06 |                                      | Last day to drop w/ "W" or designate P/F |   |
 |-------+--------------------------------------+------------------------------------------+---|
 | [[*11-10 TUE (Lecture)][11-10]] | Pattern Matching                     |                                          |   |
