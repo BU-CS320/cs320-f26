@@ -60,7 +60,7 @@ language as an object of formal study.
 | [[*11-05 THU (Lecture)][11-05]] | [[file:lectures/11-05-env-model/env-sem-notes.pdf][Environment Semantics]]                | A8 due, [[file:midterm-2/midterm-prep.org][Midterm 2 prep material]]          | ✓ |
 | 11-06 |                                      | Last day to drop w/ "W" or designate P/F | ✓ |
 |-------+--------------------------------------+------------------------------------------+---|
-| [[*11-10 TUE (Lecture)][11-10]] | Pattern Matching                     |                                          |   |
+| [[*11-10 TUE (Lecture)][11-10]] | [[file:lectures/11-10-patterns/pattern-matching-notes.pdf][Pattern Matching]]                     |                                          |   |
 | [[*11-11 WED (Midterm Review)][11-11]] | Midterm Review                       |                                          |   |
 | [[*11-12 THU (Midterm 2)][11-12]] | *Midterm 2*                          | A9 out                                   |   |
 |-------+--------------------------------------+------------------------------------------+---|
