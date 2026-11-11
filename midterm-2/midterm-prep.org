@@ -5,8 +5,8 @@
 
 * Practice Exams
 
-+ [[file:practice-exam-1.pdf][Practice exam (1)]]
-+ [[file:practice-exam-2.pdf][Practice exam (2)]]
++ [[file:practice-exam-1.pdf][Practice exam (1)]] [[file:practice-exam-1-sol.pdf][solutions]]
++ [[file:practice-exam-2.pdf][Practice exam (2)]] [[file:practice-exam-2-sol.pdf][solutions]]
 
 * Topics
 
