@@ -1,0 +1,17 @@
+(let
+  map
+  (-> (-> int int) (-> (list int) (list int)))
+  (lambda
+    f (-> int int)
+    (lambda
+      l (list int)
+      (match l
+        (
+          ( []          ([] int)                 )
+          ( (:: x xs)   (:: (f x) ((map f) xs))  )
+        )
+      )
+    )
+  )
+  ((map (lambda x int (+ x 1))) (:: 1 (:: 2 (:: 3 ([] int)))))
+)

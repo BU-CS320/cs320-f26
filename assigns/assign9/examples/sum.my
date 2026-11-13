@@ -1,0 +1,14 @@
+(let
+  sum
+  (-> (list int) int)
+  (lambda
+    l (list int)
+    (match l
+      (
+        ( []          0              )
+        ( (:: x xs)   (+ x (sum xs)) )
+      )
+    )
+  )
+  (sum (:: 1 (:: 2 (:: 3 ([] int)))))
+)
