@@ -62,7 +62,7 @@ language as an object of formal study.
 |-------+--------------------------------------+------------------------------------------+---|
 | [[*11-10 TUE (Lecture)][11-10]] | [[file:lectures/11-10-patterns/pattern-matching-notes.pdf][Pattern Matching]]                     |                                          | ✓ |
 | [[*11-11 WED (Midterm Review)][11-11]] | Midterm Review                       |                                          | ✓ |
-| [[*11-12 THU (Midterm 2)][11-12]] | *Midterm 2*                          | A9 out                                   |   |
+| [[*11-12 THU (Midterm 2)][11-12]] | *Midterm 2*                          | A9 out                                   | ✓ |
 |-------+--------------------------------------+------------------------------------------+---|
 | [[*11-17 TUE (Lecture)][11-17]] | Type Inference                       |                                          |   |
 | [[*11-18 WED (Lab 5)][11-18]] | Lab 5                                |                                          |   |
