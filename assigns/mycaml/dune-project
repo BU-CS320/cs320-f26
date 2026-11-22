@@ -1,0 +1,6 @@
+(lang dune 3.24)
+(name mycaml)
+(package
+ (name mycaml)
+ (depends ocaml menhirLib ounit2))
+(using menhir 3.0)
