@@ -64,17 +64,17 @@ language as an object of formal study.
 | [[*11-11 WED (Midterm Review)][11-11]] | Midterm Review                           |                                          | ✓ |
 | [[*11-12 THU (Midterm 2)][11-12]] | *Midterm 2*                              | A9 out                                   | ✓ |
 |-------+------------------------------------------+------------------------------------------+---|
-| [[*11-17 TUE (Lecture)][11-17]] | [[file:lectures/11-17-poly-infer/poly-infer-notes.pdf][Polymorphism and Hindley-Milner (Part 1)]] |                                          |   |
-| [[*11-18 WED (Lab 5)][11-18]] | Lab 5                                    |                                          |   |
-| [[*11-19 THU (Lecture)][11-19]] | Unification (Workshop)                   | FP out, A9 due                           |   |
+| [[*11-17 TUE (Lecture)][11-17]] | [[file:lectures/11-17-poly-infer/poly-infer-notes.pdf][Polymorphism & Hindley-Milner (Part 1)]]   |                                          | ✓ |
+| [[*11-18 WED (Lab 5)][11-18]] | Lab 5                                    |                                          | ✓ |
+| [[*11-19 THU (Lecture)][11-19]] | Unification & Principal Types (Workshop) | FP out, A9 due                           | ✓ |
 |-------+------------------------------------------+------------------------------------------+---|
-| [[*11-24 TUE (Lecture)][11-24]] | Principal Types and Specialization       |                                          |   |
+| [[*11-24 TUE (Lecture)][11-24]] | Polymorphism & Hindley-Milner (Part 2)   |                                          |   |
 | 11-25 | *No Lab*                                 | Thanksgiving Recess                      |   |
 | 11-26 | *No Lecture*                             | Thanksgiving Recess                      |   |
 |-------+------------------------------------------+------------------------------------------+---|
-| [[*12-01 TUE (Lecture)][12-01]] | Designing Rules                          |                                          |   |
+| [[*12-01 TUE (Lecture)][12-01]] | Specialization                           |                                          |   |
 | [[*12-02 WED (Quiz 5)][12-02]] | Quiz 5                                   |                                          |   |
-| [[*12-03 THU (Lecture)][12-03]] | A Case Study (Workshop)                  | FP Check-in due                          |   |
+| [[*12-03 THU (Lecture)][12-03]] | Designing Rules (Workshop)               | FP Check-in due                          |   |
 |-------+------------------------------------------+------------------------------------------+---|
 | [[*12-08 TUE (Lecture)][12-08]] | Advanced Topic                           |                                          |   |
 | [[*12-09 WED (Final Exam Review)][12-09]] | Final Exam Review                        |                                          |   |
