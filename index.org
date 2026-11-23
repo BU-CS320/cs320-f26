@@ -74,7 +74,7 @@ language as an object of formal study.
 |-------+------------------------------------------+------------------------------------------+---|
 | [[*12-01 TUE (Lecture)][12-01]] | Specialization                           |                                          |   |
 | [[*12-02 WED (Quiz 5)][12-02]] | Quiz 5                                   |                                          |   |
-| [[*12-03 THU (Lecture)][12-03]] | Designing Rules (Workshop)               | FP Check-in due                          |   |
+| [[*12-03 THU (Lecture)][12-03]] | Designing Rules (Workshop)               |                                          |   |
 |-------+------------------------------------------+------------------------------------------+---|
 | [[*12-08 TUE (Lecture)][12-08]] | Advanced Topic                           |                                          |   |
 | [[*12-09 WED (Final Exam Review)][12-09]] | Final Exam Review                        |                                          |   |
