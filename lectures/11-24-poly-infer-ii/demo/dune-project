@@ -1,0 +1,4 @@
+(lang dune 3.17)
+(name demo)
+(package (name demo) (depends ocaml))
+(using menhir 3.0)

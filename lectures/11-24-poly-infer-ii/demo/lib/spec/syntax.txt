@@ -1,0 +1,18 @@
+
+monotype   σ ::= int | bool | σ → σ | α
+type       τ ::= { ∀ α . } σ
+type par.  α
+
+expr.      e ::= x | n | λ x . e | ee
+               | e + e | e = e
+               | if e then e else e
+               | let x = e in e
+var.       x
+int        n
+
+prog.      p ::= { let x = e }
+
+val.       v ::= n | true | false
+               | ⦇ ℰ , λ x . e ⦈
+
+env.       ℰ
